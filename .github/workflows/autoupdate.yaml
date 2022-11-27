@@ -1,0 +1,74 @@
+name: autoupdate
+
+on:
+  push:
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+    inputs:
+      task:
+        description: 'Task'
+        required: true
+        default: 'status'
+        type: choice
+        options:
+        - status
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
+      module:
+        description: 'Module to update'
+        type: string
+        required: false
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    container:
+      image: registry.opensuse.org/opensuse/leap:15.4
+    steps:
+    - run: |
+        zypper -n install tar gzip
+    - uses: actions/checkout@v3
+    - run: >
+        zypper -n install perl-App-cpanminus make gcc osc expat libexpat-devel
+        procmail wget obs-service-format_spec_file obs-service-download_files
+
+        cpanm -n Archive::Zip Pod::POM Parse::CPAN::Packages
+        Text::Autoformat YAML::XS LWP::UserAgent Perl::PrereqScanner
+        Algorithm::Diff
+        XML::Simple Moo Module::Build::Tiny File::ShareDir::Install
+    - name: test
+      run: perl -c cpanspec
+    - run: |
+        mkdir -p ~/.config/osc
+        echo "[general]
+        apiurl = https://api.opensuse.org
+        [https://api.opensuse.org]
+        user = "${{ secrets.OSC_USER }}"
+        pass = "${{ secrets.OSC_PASSWORD }}"
+        email = your@example.org
+        aliases = obs" >~/.config/osc/oscrc
+    - run: |
+        mkdir ~/obs-mirror
+        ./bin/fetch-cpan --data ~/obs-mirror
+        ls -lrt ~/obs-mirror
+        ./bin/status-perl --data ~/obs-mirror --project "${{ secrets.OSC_AUTOUPDATE_REPO }}" --update
+        ls -lrt ~/obs-mirror
+        ls -lrt ~/obs-mirror/status
+        grep todo ~/obs-mirror/status/perl.tsv
+    - if: ${{ inputs.module }}
+      run: |
+        ./bin/update-perl \
+            --data ~/obs-mirror \
+            --project "${{ secrets.OSC_AUTOUPDATE_REPO }}" \
+            --max 2 --package "${{ inputs.module }}"
+    - if: ${{ ! inputs.module }}
+      run: |
+        ./bin/update-perl \
+            --data ~/obs-mirror \
+            --project "${{ secrets.OSC_AUTOUPDATE_REPO }}" \
+            --max 2
+    - run: |
+        grep todo ~/obs-mirror/status/perl.tsv
