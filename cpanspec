@@ -220,7 +220,7 @@ use Parse::CPAN::Packages;
 use File::Temp;
 use File::Path qw(rmtree);
 use Perl::PrereqScanner;
-use Encode qw/ decode_utf8 /;
+use Encode qw/ decode_utf8 encode_utf8 /;
 use Encode::Guess;
 use JSON::PP ();
 use Data::Dumper;
@@ -963,6 +963,7 @@ for my $ofile (@args) {
     if (!$description) {
         get_description($content) || get_description($content, 'OVERVIEW');
     }
+    $description = encode_utf8 $description;
 
     # $author //= get_author($content);
     # my $authors="Authors:\n--------\n$author";
