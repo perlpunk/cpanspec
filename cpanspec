@@ -689,10 +689,10 @@ sub check_dep($) {
 sub map_version($$) {
     my ($module, $version) = @_;
     if (grep { $module eq $_ } qw/Module::Build CPAN::Meta::Requirements ExtUtils::PkgConfig Test::Exception Test::Number::Delta Time::Duration DateTime::Locale File::Path/ ) {
-	my $nv = $version . "000000";
-	if ($nv =~ /^(.*\.[0-9]{6})/) {
-	    return $1;
-	}
+        my $nv = $version . "000000";
+        if ($nv =~ /^(.*\.[0-9]{6})/) {
+            return $1;
+        }
     }
     return $version;
 }
@@ -1250,7 +1250,7 @@ END
         }
         if (defined $build_requires{$dep}) {
             if ($config->{ignored_requires}->{$dep}) {
-	      printf $spec "#";
+                printf $spec "#";
             }
             printf $spec "%-16s%s", "BuildRequires:", "perl($dep)";
             print $spec (" >= " . map_version($dep, $build_requires{$dep}))
@@ -1488,20 +1488,21 @@ END
     print $spec "\%files -f \%{name}.files\n";
 
     if (%hdoc) {
-	my (@ldoc, @hdoc);
-	for my $f (keys %hdoc) {
-	    if (is_license_file($f)) {
-		push(@ldoc, $f);
-	    } else {
-		push(@hdoc, $f);
-	    }
-	}
-	if (@hdoc) {
-	    print $spec "%doc " . join(' ', sort(@hdoc)) . "\n";
-	}
-	if (@ldoc) {
-	    print $spec "%license " . join(' ', sort(@ldoc)) . "\n";
-	}
+        my (@ldoc, @hdoc);
+        for my $f (keys %hdoc) {
+            if (is_license_file($f)) {
+                push(@ldoc, $f);
+            }
+            else {
+                push(@hdoc, $f);
+            }
+        }
+        if (@hdoc) {
+            print $spec "%doc " . join(' ', sort(@hdoc)) . "\n";
+        }
+        if (@ldoc) {
+            print $spec "%license " . join(' ', sort(@ldoc)) . "\n";
+        }
     }
 
     if ($scripts) {
