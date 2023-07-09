@@ -38,29 +38,37 @@ if ($task eq 'next') {
 sub next_version ($module, $next) {
     my $current = $modules{ $module };
     warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\$current], ['current']);
-    my $nextv = version->parse($next);
-    my $normal = $nextv->normal;
+    my $nextv = version->parse($next); # version object
+    my $normal = $nextv->normal;       # normalized version string with more than one dot
     my $currentv = version->parse($current);
-    if ($current =~ m/^\d+\.\d+\./) { # already proper format for rpm
-        return $nextv > $currentv ? $normal : $next;
+
+    # If the requested version is lower than/equal to the saved one, we just
+    # use the given format like we did before
+    if ($nextv <= $currentv) {
+        return $next;
     }
-    unless ($current =~ m/\./) { # integer
-        return $nextv > $currentv ? $normal : $next;
+    # requested version is higher
+    if ($current =~ m/^\d+\.\d+\./) {
+        # is already proper format for rpm, e.g. 3.14.159
+        return $normal;
     }
-    # up to 3 decimals
+    unless ($current =~ m/\./) {
+        # integer
+        return $normal;
+    }
+    # up to 3 decimals, safe to use normalized version
     if ($current =~ m/^\d+\.\d{1,3}$/) {
-        return $nextv > $currentv ? $normal : $next;
+        return $normal;
     }
     # four or more decimals, must keep format until major version increases
+    # otherwise e.g. 1.2023 would be normalized to 1.202.3 which is lower
     if ($current =~ m/^(\d)\.(\d{4,})$/) {
         my ($cmajor, $cminor) = ($1, $2);
+        # format with the number of decimals of the saved version
         my $decimals = length $cminor;
         my ($nmajor, $nminor) = split m/\./, $next;
         if (defined $nminor) {
             $next = sprintf "%.*f", $decimals, $next;
-        }
-        if ($nextv <= $currentv) {
-            return $next;
         }
         if ($next =~ m/^$cmajor(?:\.|$)/) {
             return $next;
