@@ -225,6 +225,7 @@ use Encode::Guess;
 use JSON::PP ();
 use Data::Dumper;
 use Algorithm::Diff;
+use FindBin '$Bin';
 
 require Carp;
 
@@ -258,6 +259,8 @@ our $old_file;
 our $config = {};
 our $cpan = $ENV{'CPAN'} || 'https://cpan.metacpan.org';
 my $debug;
+my $dlp;
+my $version_snapshot;
 
 our $home = $ENV{'HOME'} || (getpwuid($<))[7];
 die "Can't locate home directory.  Please define \$HOME.\n"
@@ -380,11 +383,7 @@ sub update_packages() {
     $updated = 1;
 }
 
-sub get_file($) {
-    my $ofile = shift;
-    my ($file, $name, $version, $type);
-    # Look up $ofile in 02packages.details.txt.
-    verbose("Get file $ofile");
+sub read_packages {
     update_packages();
     if (!defined($packages)) {
         verbose "parsing packages";
@@ -392,6 +391,14 @@ sub get_file($) {
         verbose "done";
     }
     die "Parse::CPAN::Packages->new() failed: $!\n" unless defined $packages;
+}
+
+sub get_file($) {
+    my $ofile = shift;
+    my ($file, $name, $version, $type);
+    # Look up $ofile in 02packages.details.txt.
+    verbose("Get file $ofile");
+    read_packages();
     my ($m, $d);
     if ($m = $packages->package($ofile) and $d = $m->distribution()) {
         $source = $cpan . "/authors/id/" . $d->prefix();
@@ -405,6 +412,31 @@ sub get_file($) {
     else {
         warn "Failed to parse '$file' or find a module by that name, skipping...\n";
     }
+    return ($file, $name, $version, $type);
+}
+
+sub module_details {
+    my ($module) = @_;
+    my %details;
+    my ($file, $name, $version, $type);
+    # Look up $module in 02packages.details.txt.
+    verbose("Get module $module");
+    read_packages();
+    my ($m, $dist);
+    if ($m = $packages->package($module) and $dist = $m->distribution()) {
+        warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\$m], ['m']);
+        warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\$dist], ['dist']);
+        $details{file} =  basename($dist->filename());
+        $details{name} = $dist->dist;
+        $details{version} = $dist->version =~ s/^v//r;
+        my $p = $dist->packages;
+        warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\%details], ['details']);
+        warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\$p], ['p']);
+    }
+    else {
+        warn "Failed to parse '$file' or find a module by that name, skipping...\n";
+    }
+    return \%details;
     return ($file, $name, $version, $type);
 }
 
@@ -686,15 +718,87 @@ sub check_dep($) {
     return (check_rpm("perl($module)") || check_repo("perl($module)"));
 }
 
+my @fixed_versions = qw/
+    Module::Build CPAN::Meta::Requirements ExtUtils::PkgConfig Test::Exception
+    Test::Number::Delta Time::Duration DateTime::Locale File::Path
+/;
 sub map_version($$) {
     my ($module, $version) = @_;
-    if (grep { $module eq $_ } qw/Module::Build CPAN::Meta::Requirements ExtUtils::PkgConfig Test::Exception Test::Number::Delta Time::Duration DateTime::Locale File::Path/ ) {
+    if (grep { $module eq $_ } @fixed_versions) {
         my $nv = $version . "000000";
         if ($nv =~ /^(.*\.[0-9]{6})/) {
             return $1;
         }
     }
+    if ($dlp) {
+        return next_version($module, $version);
+    }
     return $version;
+}
+
+sub read_version_snapshot {
+    my ($tsv) = @_;
+    my %modules;
+    open my $fh, '<', $tsv or die $!;
+    while (my $line = <$fh>) {
+        chomp $line;
+        my ($name, $version) = split m/\t/, $line;
+        $modules{ $name } = $version;
+    }
+    close $fh;
+    return \%modules;
+}
+
+sub next_version {
+    my ($module, $next) = @_;
+    my $details = module_details($module);
+    warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\$details], ['details']);
+    my $dist = $module =~ s/::/-/gr;
+    my $current = $version_snapshot->{ "perl-$dist" };
+    unless (defined $current) {
+        die "$module not found in snapshot";
+    }
+    my $nextv = version->parse($next); # version object
+    my $normal = $nextv->normal;       # normalized version string with more than one dot
+    unless ($current) {
+        return $normal;
+    }
+    my $currentv = version->parse($current);
+
+    # If the requested version is lower than/equal to the saved one, we just
+    # use the given format like we did before
+    if ($nextv <= $currentv) {
+        return $next;
+    }
+    # requested version is higher
+    if ($current =~ m/^\d+\.\d+\./) {
+        # is already proper format for rpm, e.g. 3.14.159
+        return $normal;
+    }
+    unless ($current =~ m/\./) {
+        # integer
+        return $normal;
+    }
+    # up to 3 decimals, safe to use normalized version
+    if ($current =~ m/^\d+\.\d{1,3}$/) {
+        return $normal;
+    }
+    # four or more decimals, must keep format until major version increases
+    # otherwise e.g. 1.2023 would be normalized to 1.202.3 which is lower
+    if ($current =~ m/^(\d)\.(\d{4,})$/) {
+        my ($cmajor, $cminor) = ($1, $2);
+        # format with the number of decimals of the saved version
+        my $decimals = length $cminor;
+        my ($nmajor, $nminor) = split m/\./, $next;
+        if (defined $nminor) {
+            $next = sprintf "%.*f", $decimals, $next;
+        }
+        if ($next =~ m/^$cmajor(?:\.|$)/) {
+            return $next;
+        }
+        return $normal;
+    }
+    die "Unexpected version for $module: '$next'";
 }
 
 sub extract_old_changes($$) {
@@ -757,6 +861,9 @@ sub is_license_file {
     return;
 }
 
+sub debug_version {
+    warn sprintf "%-40s  %10s --> %10s\n", @_;
+}
 # Set locale to en_US.UTF8 so that dates in changelog will be correct
 # if using another locale. Also ensures writing out UTF8. (Thanks to
 # Roy-Magne Mo for pointing out the problem and providing a solution.)
@@ -789,6 +896,7 @@ GetOptions(
     'prefer-macros|m'     => \$macros,
     'pkgdetails=s'        => \$pkgdetails,
     'debug'               => \$debug,
+    'dlp'                 => \$dlp,
 ) or pod2usage({-exitval => 1, -verbose => 0});
 
 pod2usage({-exitval => 0, -verbose => 1}) if ($help);
@@ -797,6 +905,10 @@ pod2usage({-exitval => 1, -verbose => 0}) if (!@ARGV);
 if ($follow and $buildrpm) {
     warn "Sorry, --follow and --build are mutually exclusive right now.\n" . "We can't build when tracking deps right now.  Ignoring --build.\n";
     $buildrpm = 0;
+}
+if ($dlp) {
+    my $tsv = "$Bin/dlp.tsv";
+    $version_snapshot = read_version_snapshot($tsv);
 }
 
 %macro = %{$MACROS[$macros]};
@@ -1124,6 +1236,7 @@ for my $ofile (@args) {
 
     rmtree($basedir);
     my $rpm_version = map_version($module, $version);
+    debug_version($module, $version, $rpm_version);
     my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
 
     print $spec <<END;
@@ -1253,8 +1366,11 @@ END
                 printf $spec "#";
             }
             printf $spec "%-16s%s", "BuildRequires:", "perl($dep)";
-            print $spec (" >= " . map_version($dep, $build_requires{$dep}))
-              if ($build_requires{$dep});
+            if ($build_requires{$dep}) {
+                my $mapped = map_version($dep, $build_requires{$dep});
+                debug_version($dep, $build_requires{$dep},$mapped);
+                print $spec " >= $mapped";
+            }
             print $spec "\n";
         }
     }
@@ -1269,7 +1385,11 @@ END
            printf $spec "#";
         }
         printf $spec "%-16s%s", "Requires:", "perl($dep)";
-        print $spec (" >= " . map_version($dep, $requires{$dep})) if ($requires{$dep});
+        if ($requires{$dep}) {
+            my $mapped = map_version($dep, $requires{$dep});
+                debug_version($dep, $requires{$dep},$mapped);
+            print $spec " >= $mapped";
+        }
         print $spec "\n";
     }
 
