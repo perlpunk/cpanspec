@@ -1,0 +1,23 @@
+## dlp
+
+obs api /status/project/devel:languages:perl >dlp.xml
+
+cat dlp.xml| perl -nlwE'
+if (m/name="(perl-.*?)".*version="(.*?)"/) {
+  my $n = $1; my $v = $2;
+  say "$n\t$v";
+}'> dlp.tsv
+
+
+## cpan
+
+tail -n +10 ~/.cpanm/sources/http%www.cpan.org/02packages.details.txt >packages.details.txt
+
+cat packages.details.txt | perl -nlwE'
+if (m/^(\S+)\s+(\S+)\s+(\S+)$/) {
+my ($p, $m, $v) = ($3, $1, $2);
+my $dist = $p =~ s{^.*/}{}r;
+$dist =~ s/\.(tar\.gz|tgz|zip|gz|bz2)$//;
+say "$dist\t$m\t$v";
+}' >dist-provides-module.tsv
+

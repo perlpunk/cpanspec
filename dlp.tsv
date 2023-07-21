@@ -162,7 +162,7 @@ perl-B-Hooks-OP-Check	0.22
 perl-B-Hooks-OP-Check-EntersubForCV	0.10
 perl-B-Hooks-OP-PPAddr	0.06
 perl-B-Hooks-Parser	0.21
-perl-B-Keywords	1.24
+perl-B-Keywords	1.26
 perl-B-Lint	1.20
 perl-B-Utils	0.27
 perl-BIND-Conf_Parser	0.97
@@ -253,7 +253,7 @@ perl-CPAN-Meta-Check	0.017
 perl-CPAN-Meta-Requirements	2.143000
 perl-CPAN-Meta-YAML	0.018
 perl-CPAN-Mini	1.111016
-perl-CPAN-Perl-Releases	5.20230423
+perl-CPAN-Perl-Releases	5.20230703
 perl-CPAN-Reporter	1.2019
 perl-CPAN-Reporter-Smoker	0.29
 perl-CPAN-SQLite	0.212
@@ -470,7 +470,7 @@ perl-Complete-File	0.443
 perl-Complete-Fish	0.060
 perl-Complete-Getopt-Long	0.481
 perl-Complete-Path	0.251
-perl-Complete-Sah	0.012
+perl-Complete-Sah	0.013
 perl-Complete-Sequence	0.002
 perl-Complete-Tcsh	0.030
 perl-Complete-Util	0.617
@@ -530,7 +530,7 @@ perl-Convert-UUlib	1.8
 perl-Cookie-Baker	0.11
 perl-Cookie-XS	0.11
 perl-Coro	6.57
-perl-Cpanel-JSON-XS	4.36
+perl-Cpanel-JSON-XS	4.37
 perl-Crypt-Blowfish	2.14
 perl-Crypt-Blowfish_PP	1.12
 perl-Crypt-CAST5	0.05
@@ -557,7 +557,8 @@ perl-Crypt-OpenSSL-Guess	0.15
 perl-Crypt-OpenSSL-PBKDF2	0.04
 perl-Crypt-OpenSSL-RSA	0.33
 perl-Crypt-OpenSSL-Random	0.15
-perl-Crypt-OpenSSL-X509	1.914
+perl-Crypt-OpenSSL-Verify	0.36
+perl-Crypt-OpenSSL-X509	1.915
 perl-Crypt-PBKDF2	0.161520
 perl-Crypt-PasswdMD5	1.42
 perl-Crypt-Password	0.28
@@ -618,11 +619,11 @@ perl-DBIx-Class-OptimisticLocking	0.02
 perl-DBIx-Class-Schema-Config	0.001014
 perl-DBIx-Class-Schema-Loader	0.07051
 perl-DBIx-Class-UUIDColumns	0.02006
-perl-DBIx-Connector	0.58
+perl-DBIx-Connector	0.59
 perl-DBIx-ContextualFetch	1.03
 perl-DBIx-DBSchema	0.47
 perl-DBIx-RetryOverDisconnects	0.12
-perl-DBIx-SearchBuilder	1.76
+perl-DBIx-SearchBuilder	1.78
 perl-DBIx-Simple	1.37
 perl-DBIx-Transaction	1.100
 perl-DBIx-TransactionManager	1.13
@@ -773,7 +774,7 @@ perl-DateTime-Format-ICal	0.09
 perl-DateTime-Format-ISO8601	0.16
 perl-DateTime-Format-Mail	0.403
 perl-DateTime-Format-MySQL	0.0701
-perl-DateTime-Format-Natural	1.16
+perl-DateTime-Format-Natural	1.17
 perl-DateTime-Format-Oracle	0.06
 perl-DateTime-Format-Pg	0.16014
 perl-DateTime-Format-SQLite	0.11
@@ -1189,7 +1190,7 @@ perl-Furl	3.14
 perl-Fuse	0.16.1
 perl-Future	0.50
 perl-Future-IO	0.14
-perl-GD	2.76
+perl-GD	2.78
 perl-GD-Barcode	1.15
 perl-GD-Barcode-Code128	2.01
 perl-GD-Graph3d	0.63
@@ -1247,7 +1248,7 @@ perl-Goo-Canvas	0.06
 perl-GooCanvas2	0.06
 perl-Google-ProtocolBuffers	0.12
 perl-Goose	0.016
-perl-Graph	0.9726
+perl-Graph	0.9727
 perl-Graph-Easy	0.76
 perl-Graph-ReadWrite	2.10
 perl-GraphViz	2.26
@@ -1334,7 +1335,7 @@ perl-HTTP-CookieMonster	0.11
 perl-HTTP-Cookies	6.10
 perl-HTTP-DAV	0.49
 perl-HTTP-Daemon	6.16
-perl-HTTP-Date	6.05
+perl-HTTP-Date	6.06
 perl-HTTP-Entity-Parser	0.25
 perl-HTTP-HeaderParser-XS	0.20
 perl-HTTP-Headers-ActionPack	0.09
@@ -1355,6 +1356,7 @@ perl-HTTP-Server-Simple-Mason	0.14
 perl-HTTP-Server-Simple-PSGI	0.16
 perl-HTTP-Thin	0.006
 perl-HTTP-Tiny	0.086
+perl-HTTP-Tiny-Paranoid	0.07
 perl-HTTP-Tinyish	0.18
 perl-HTTP-XSCookies	0.000021
 perl-HTTPS-Daemon	1.04
@@ -1371,6 +1373,7 @@ perl-Hash-MultiValue	0.16
 perl-Hash-Objectify	0.008
 perl-Hash-Ordered	0.014
 perl-Hash-SafeKeys	0.04
+perl-Hash-SharedMem	0.005
 perl-Hash-Util-FieldHash-Compat	0.11
 perl-Heap	0.80
 perl-Hook-LexWrap	0.26
@@ -1392,7 +1395,7 @@ perl-IO-Extended	0.16
 perl-IO-FDPass	1.3
 perl-IO-HTML	1.004
 perl-IO-Handle-Util	0.02
-perl-IO-Interactive	1.023
+perl-IO-Interactive	1.025
 perl-IO-Interface	1.09
 perl-IO-Multiplex	1.16
 perl-IO-Pager	2.10
@@ -1423,7 +1426,7 @@ perl-IPC-Run-SafeHandles	0.04
 perl-IPC-Run3	0.048
 perl-IPC-ShareLite	0.17
 perl-IPC-Signal	1.00
-perl-IPC-System-Options	0.340
+perl-IPC-System-Options	0.341
 perl-IPC-System-Simple	1.30
 perl-IRC-Utils	0.12
 perl-IRI	0.011
@@ -1478,7 +1481,7 @@ perl-LEOCHARRE-Dir	1.09
 perl-LWP-Authen-Negotiate	0.08
 perl-LWP-Authen-OAuth2	0.20
 perl-LWP-Authen-Wsse	0.05
-perl-LWP-ConsoleLogger	1.000000
+perl-LWP-ConsoleLogger	1.000001
 perl-LWP-Curl	0.14
 perl-LWP-MediaTypes	6.04
 perl-LWP-Online	1.08
@@ -1506,7 +1509,7 @@ perl-Lingua-EN-Number-IsOrdinal	0.05
 perl-Lingua-EN-Numbers	2.03
 perl-Lingua-EN-Numbers-Ordinate	1.05
 perl-Lingua-EN-PluralToSingular	0.21
-perl-Lingua-EN-Sentence	0.33
+perl-Lingua-EN-Sentence	0.34
 perl-Lingua-EN-Tagger	0.31
 perl-Lingua-EN-Words2Nums	0.18
 perl-Lingua-Identify	0.56
@@ -1544,9 +1547,10 @@ perl-Locale-Msgfmt	0.15
 perl-Locale-PO	0.27
 perl-Locale-PO-Utils	0.08
 perl-Locale-US	3.04
+perl-Lock-File	1.03
 perl-LockFile-Simple	0.208
 perl-Log-Agent	1.005
-perl-Log-Any	1.715
+perl-Log-Any	1.716
 perl-Log-Any-Adapter-Callback	0.101
 perl-Log-Any-Adapter-Dispatch	0.08
 perl-Log-Any-Adapter-Log4perl	0.09
@@ -1584,7 +1588,7 @@ perl-MARC-Crosswalk-DublinCore	0.02
 perl-MARC-Lint	1.52
 perl-MARC-Record	2.0.7
 perl-MARC-XML	1.0.3
-perl-MCE	1.887
+perl-MCE	1.888
 perl-MCE-Shared	1.885
 perl-MD5	2.03
 perl-MDV-Packdrakeng	1.13
@@ -1606,12 +1610,16 @@ perl-MRO-Compat	0.15
 perl-Mac-PropertyList	1.504
 perl-Mail-Audit	2.228
 perl-Mail-AuthenticationResults	2.20230112
+perl-Mail-BIMI	3.20230607
 perl-Mail-Box	3.009
-perl-Mail-DKIM	1.20230212
+perl-Mail-DKIM	1.20230630
+perl-Mail-DMARC	1.20230215
+perl-Mail-DataFeed-Abusix	2.20210112
 perl-Mail-GnuPG	0.23
 perl-Mail-IMAPClient	3.43
 perl-Mail-Mbox-MessageParser	1.5111
-perl-Mail-Message	3.012
+perl-Mail-Message	3.013
+perl-Mail-Milter-Authentication	3.20230629
 perl-Mail-POP3Client	2.21
 perl-Mail-RFC822-Address	0.3
 perl-Mail-SPF	2.9.0
@@ -1697,14 +1705,14 @@ perl-Module-Build-Pluggable	0.10
 perl-Module-Build-Pluggable-CPANfile	0.05
 perl-Module-Build-Pluggable-PPPort	0.04
 perl-Module-Build-Prereqs-FromCPANfile	0.02
-perl-Module-Build-Tiny	0.039
+perl-Module-Build-Tiny	0.046
 perl-Module-Build-Using-PkgConfig	0.03
 perl-Module-Build-WithXSpp	0.14
 perl-Module-Build-XSUtil	0.19
 perl-Module-CPANTS-Analyse	1.01
 perl-Module-CPANfile	1.1004
 perl-Module-Compile	0.38
-perl-Module-CoreList	5.20230423
+perl-Module-CoreList	5.20230520
 perl-Module-Depends	0.16
 perl-Module-Extract-Namespaces	1.023
 perl-Module-Extract-VERSION	1.116
@@ -1730,7 +1738,7 @@ perl-Module-Install-Repository	0.06
 perl-Module-Installed-Tiny	0.011
 perl-Module-List	0.004
 perl-Module-Load-Conditional	0.74
-perl-Module-Load-Util	0.008
+perl-Module-Load-Util	0.009
 perl-Module-Manifest	1.09
 perl-Module-Manifest-Skip	0.23
 perl-Module-Mask	0.06
@@ -1744,7 +1752,7 @@ perl-Module-Reader	0.003003
 perl-Module-Refresh	0.18
 perl-Module-Runtime	0.016
 perl-Module-Runtime-Conflicts	0.003
-perl-Module-ScanDeps	1.31
+perl-Module-ScanDeps	1.32
 perl-Module-Signature	0.88
 perl-Module-Starter	1.77
 perl-Module-Util	1.09
@@ -1761,7 +1769,7 @@ perl-Mojo-RabbitMQ-Client	0.3.1
 perl-Mojo-Redis	3.29
 perl-Mojo-SQLite	3.009
 perl-MojoX-JSON-RPC	0.13
-perl-Mojolicious	9.32
+perl-Mojolicious	9.33
 perl-Mojolicious-Plugin-AssetPack	2.14
 perl-Mojolicious-Plugin-CHI	0.20
 perl-Mojolicious-Plugin-NYTProf	0.23
@@ -1896,12 +1904,13 @@ perl-Net-Amazon-Signature-V4	0.21
 perl-Net-CIDR	0.21
 perl-Net-CIDR-Lite	0.22
 perl-Net-CIDR-Set	0.13
-perl-Net-Curl	0.53
+perl-Net-Curl	0.54
 perl-Net-DBus	1.2.0
 perl-Net-DBus-GLib	0.33.0
 perl-Net-DNS	1.39
 perl-Net-DNS-Codes	0.12
 perl-Net-DNS-Lite	0.12
+perl-Net-DNS-Paranoid	0.08
 perl-Net-DNS-Resolver-Mock	1.20230216
 perl-Net-DNS-Resolver-Programmable	0.009
 perl-Net-DNS-SEC	1.21
@@ -1914,7 +1923,7 @@ perl-Net-FTPSSL	0.42
 perl-Net-GPSD3	0.19
 perl-Net-Google-AuthSub	0.5
 perl-Net-Google-Calendar	1.05
-perl-Net-HTTP	6.22
+perl-Net-HTTP	6.23
 perl-Net-HTTP-Spore	0.09
 perl-Net-HTTPS-Any	0.12
 perl-Net-HTTPServer	1.1.1
@@ -1946,7 +1955,7 @@ perl-Net-OAuth2	0.67
 perl-Net-OBS-Client	0.0.8
 perl-Net-OpenID-Common	1.20
 perl-Net-OpenID-Consumer	1.18
-perl-Net-OpenSSH	0.83
+perl-Net-OpenSSH	0.84
 perl-Net-OpenStack-Compute	1.1200
 perl-Net-Patricia	1.22
 perl-Net-Pcap	0.21
@@ -2009,7 +2018,7 @@ perl-Number-Compare	0.03
 perl-Number-Format	1.76
 perl-Number-Format-Metric	0.602
 perl-Number-Misc	1.2
-perl-Number-Phone	3.9001
+perl-Number-Phone	3.9002
 perl-Number-Phone-JP	0.20190521
 perl-Number-Tolerant	1.710
 perl-Number-WithError	1.01
@@ -2036,8 +2045,8 @@ perl-Ouch	0.0501
 perl-Overload-FileCheck	0.013
 perl-PAR	1.018
 perl-PAR-Dist	0.52
-perl-PAR-Packer	1.057
-perl-PAR-Packer-test	1.057
+perl-PAR-Packer	1.058
+perl-PAR-Packer-test	1.058
 perl-PAUSE-Permissions	0.17
 perl-PBKDF2-Tiny	0.005
 perl-PDF-API2	2.044
@@ -2157,7 +2166,7 @@ perl-Perl-MinimumVersion	1.40
 perl-Perl-OSType	1.010
 perl-Perl-PrereqScanner	1.100
 perl-Perl-PrereqScanner-NotQuiteLite	0.9917
-perl-Perl-Tidy	20230309
+perl-Perl-Tidy	20230701
 perl-Perl-Version	1.013
 perl-Perl-osnames	0.122
 perl-Perl6-Attributes	0.04
@@ -2195,7 +2204,7 @@ perl-Plack-Test-Agent	1.5
 perl-Plack-Test-ExternalServer	0.02
 perl-Playwright	1.324
 perl-Pod-Abstract	0.20
-perl-Pod-AsciiDoctor	0.101002
+perl-Pod-AsciiDoctor	0.101003
 perl-Pod-Constants	0.19
 perl-Pod-Coverage	0.23
 perl-Pod-Coverage-Moose	0.07
@@ -2243,7 +2252,7 @@ perl-Proc-Find-Parents	0.631
 perl-Proc-Fork	0.808
 perl-Proc-Guard	0.07
 perl-Proc-PID-File	1.29
-perl-Proc-ProcessTable	0.635
+perl-Proc-ProcessTable	0.636
 perl-Proc-Simple	1.32
 perl-Proc-SyncExec	1.01
 perl-Proc-Terminator	0.05
@@ -2253,6 +2262,8 @@ perl-Process-KillTree	0.02
 perl-Progress-Any	0.220
 perl-Project-Gantt	1.03
 perl-ProjectBuilder	0.14.1
+perl-Prometheus-Tiny	0.010
+perl-Prometheus-Tiny-Shared	0.026
 perl-Prompt-Timeout	1.03
 perl-Protocol-HTTP2	1.10
 perl-Protocol-Redis	1.0011
@@ -2304,7 +2315,7 @@ perl-Regexp-IPv6	0.03
 perl-Regexp-Parser	0.23
 perl-Regexp-Pattern	0.2.14
 perl-Regexp-Pattern-DefHash	0.001
-perl-Regexp-Pattern-License	3.10.1
+perl-Regexp-Pattern-License	3.11.0
 perl-Regexp-Pattern-Perl	0.007
 perl-Regexp-Shellish	0.93
 perl-Regexp-Stringify	0.06
@@ -2313,7 +2324,7 @@ perl-Reply	0.42
 perl-Retry	1.04
 perl-Return-MultiLevel	0.08
 perl-Return-Value	1.666005
-perl-Rex	1.14.1
+perl-Rex	1.14.2
 perl-Riap	1.2.4
 perl-Rinci	1.1.103
 perl-Role-Basic	0.13
@@ -2441,7 +2452,7 @@ perl-Starlet	0.31
 perl-Starman	0.4016
 perl-Statistics-CaseResampling	0.15
 perl-Statistics-ChiSquare	1.0000
-perl-Statistics-Descriptive	3.0800
+perl-Statistics-Descriptive	3.0801
 perl-Statistics-Distributions	1.02
 perl-Statistics-LineFit	0.07
 perl-Statistics-Lite	3.62
@@ -2522,6 +2533,8 @@ perl-TAP-Formatter-JUnit	0.16
 perl-TAP-Harness-Archive	0.18
 perl-TAP-Harness-JUnit	0.42
 perl-TAP-SimpleOutput	0.009
+perl-TOML	0.97
+perl-TOML-Parser	0.91
 perl-Taint-Runtime	0.03
 perl-Taint-Util	0.08
 perl-Tapper-Config	5.0.4
@@ -2585,7 +2598,7 @@ perl-Term-ProgressBar-Quiet	0.31
 perl-Term-ProgressBar-Simple	0.03
 perl-Term-Prompt	1.04
 perl-Term-ReadKey	2.38
-perl-Term-ReadLine-Gnu	1.45
+perl-Term-ReadLine-Gnu	1.46
 perl-Term-ReadLine-Perl	1.0303
 perl-Term-ReadPassword	0.11
 perl-Term-Screen	1.06
@@ -2625,6 +2638,7 @@ perl-Test-Compile	3.2.2
 perl-Test-ConsistentVersion	0.3.1
 perl-Test-Database	1.113
 perl-Test-Deep	1.204
+perl-Test-Deep-Fuzzy	0.01
 perl-Test-Deep-JSON	0.05
 perl-Test-Deep-Type	0.008
 perl-Test-Deep-UnorderedPairs	0.006
@@ -2704,7 +2718,7 @@ perl-Test-NoTabs	2.02
 perl-Test-NoWarnings	1.06
 perl-Test-Number-Delta	1.060000
 perl-Test-Object	0.08
-perl-Test-Output	1.033
+perl-Test-Output	1.034
 perl-Test-PAUSE-Permissions	0.07
 perl-Test-PDF	0.01
 perl-Test-POE-Client-TCP	1.26
@@ -2773,6 +2787,7 @@ perl-Test-YAML	1.07
 perl-Test-YAML-Valid	0.04
 perl-Test-mysqld	1.0013
 perl-Test-utf8	1.02
+perl-Test2-Harness	1.000152
 perl-Test2-Plugin-MemUsage	0.002003
 perl-Test2-Plugin-NoWarnings	0.09
 perl-Test2-Plugin-UUID	0.002001
@@ -3093,8 +3108,8 @@ perl-XML-XPath	1.48
 perl-XML-XPathEngine	0.14
 perl-XML-XSLT	0.48
 perl-XMLRPC-Lite	0.717
-perl-XS-Parse-Keyword	0.33
-perl-XS-Parse-Sublike	0.17
+perl-XS-Parse-Keyword	0.34
+perl-XS-Parse-Sublike	0.18
 perl-XSLoader	0.24
 perl-XString	0.005
 perl-XXX	0.38
@@ -3141,7 +3156,7 @@ perl-lib-abs	0.95
 perl-lib-relative	1.001
 perl-libconfigfile	1.1.1
 perl-libintl-perl	1.33
-perl-libwww-perl	6.70
+perl-libwww-perl	6.71
 perl-libxml-perl	0.08
 perl-load	0.25
 perl-local-lib	2.000024
