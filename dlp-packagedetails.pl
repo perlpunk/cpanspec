@@ -14,6 +14,7 @@ my %dist;
 for my $row (@$rows) {
     my ($dist, $distv) = @$row;
     $dist =~ s/^perl-//;
+    $dist = 'perl-ldap' if $dist eq 'ldap';
     $dist{$dist} = $distv;
 }
 my $details = Parse::CPAN::Packages->new($pkgdetails);

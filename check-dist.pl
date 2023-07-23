@@ -12,6 +12,7 @@ my %dlpdist;
 for my $row (@$rows) {
     my ($dist, $distv) = @$row;
     $dist =~ s/^perl-//;
+    $dist = 'perl-ldap' if $dist eq 'ldap';
     $dlpdist{$dist} = $distv;
 }
 
