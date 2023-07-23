@@ -91,7 +91,6 @@ perl-App-MFILE-WWW	0.176
 perl-App-Maisha	0.22
 perl-App-Nopaste	1.013
 perl-App-Options	1.12
-perl-App-ProcIops	0.002
 perl-App-Prolix	0.03
 perl-App-Rad	1.05
 perl-App-Rad-Plugin-MoreHelp	0.0001
@@ -124,7 +123,6 @@ perl-Archive-Zip	1.68
 perl-Argv	1.28
 perl-Array-Compare	3.0.8
 perl-Array-Diff	0.09
-perl-Array-Dissect	1.03
 perl-Array-IntSpan	2.004
 perl-Array-Unique	0.09
 perl-Array-Window	1.02
@@ -142,7 +140,6 @@ perl-Audio-Wav	0.14
 perl-AudioFile-Info	2.0.2
 perl-Authen-Captcha	1.024
 perl-Authen-DecHpwd	2.007
-perl-Authen-NTLM	1.09
 perl-Authen-PAM	0.16
 perl-Authen-Passphrase	0.008
 perl-Authen-SASL	2.16
@@ -167,7 +164,6 @@ perl-B-Lint	1.20
 perl-B-Utils	0.27
 perl-BIND-Conf_Parser	0.97
 perl-BSD-Resource	1.2911
-perl-BSXML	0.0
 perl-Badger	0.16
 perl-Beam-Emitter	1.007
 perl-Benchmark-Timer	0.7112
@@ -182,7 +178,6 @@ perl-Bit-Vector	7.4
 perl-Boost-Geometry-Utils	0.15
 perl-Border-Style	0.01
 perl-BorderStyle	3.0.2
-perl-BorderStyleBase	0.010
 perl-BorderStyles-Standard	0.014
 perl-Bot-BasicBot	0.93
 perl-Bread-Board	0.37
@@ -319,7 +314,6 @@ perl-Catalyst-Plugin-Authentication	0.10023
 perl-Catalyst-Plugin-Authorization-Roles	0.09
 perl-Catalyst-Plugin-Cache	0.12
 perl-Catalyst-Plugin-Compress	0.006
-perl-Catalyst-Plugin-Compress-Gzip	0.06
 perl-Catalyst-Plugin-ConfigLoader	0.35
 perl-Catalyst-Plugin-CustomErrorMessage	0.06
 perl-Catalyst-Plugin-I18N	0.10
@@ -334,7 +328,6 @@ perl-Catalyst-Plugin-Session-Store-File	0.18
 perl-Catalyst-Plugin-StackTrace	0.12
 perl-Catalyst-Plugin-Static-Simple	0.37
 perl-Catalyst-Plugin-SubRequest	0.21
-perl-Catalyst-Plugin-Unicode-Encoding	1.1
 perl-Catalyst-Runtime	5.90130
 perl-Catalyst-View-Component-SubInclude	0.10
 perl-Catalyst-View-Email	0.36
@@ -891,17 +884,13 @@ perl-Dist-Zilla-Plugin-Catalyst	0.15
 perl-Dist-Zilla-Plugin-ChangelogFromGit	0.017
 perl-Dist-Zilla-Plugin-CheckChangeLog	0.05
 perl-Dist-Zilla-Plugin-CheckChangesHasContent	0.011
-perl-Dist-Zilla-Plugin-CheckChangesTests	1.100900
 perl-Dist-Zilla-Plugin-CheckExtraTests	0.029
 perl-Dist-Zilla-Plugin-Clean	0.07
 perl-Dist-Zilla-Plugin-Config-Git	0.92
 perl-Dist-Zilla-Plugin-CopyFilesFromBuild	0.170880
 perl-Dist-Zilla-Plugin-CopyTo	0.11
-perl-Dist-Zilla-Plugin-CriticTests	1.102280
-perl-Dist-Zilla-Plugin-DistManifestTests	1.101420
 perl-Dist-Zilla-Plugin-DualBuilders	1.002
 perl-Dist-Zilla-Plugin-DynamicPrereqs	0.040
-perl-Dist-Zilla-Plugin-EOLTests	0.02
 perl-Dist-Zilla-Plugin-FatPacker	1.161631
 perl-Dist-Zilla-Plugin-Git	2.048
 perl-Dist-Zilla-Plugin-GitFmtChanges	0.006
@@ -911,24 +900,19 @@ perl-Dist-Zilla-Plugin-HasVersionTests	1.101420
 perl-Dist-Zilla-Plugin-Homepage	1.101420
 perl-Dist-Zilla-Plugin-InstallGuide	1.200014
 perl-Dist-Zilla-Plugin-InstallRelease	0.008
-perl-Dist-Zilla-Plugin-KwaliteeTests	1.101420
 perl-Dist-Zilla-Plugin-LatestPrereqs	0.4
 perl-Dist-Zilla-Plugin-LocaleMsgfmt	1.203
 perl-Dist-Zilla-Plugin-MakeMaker-Awesome	0.49
 perl-Dist-Zilla-Plugin-MatchManifest	6.000
 perl-Dist-Zilla-Plugin-Mercurial	0.08
-perl-Dist-Zilla-Plugin-MetaNoIndex	1.101550
 perl-Dist-Zilla-Plugin-MetaResourcesFromGit	1.103620
 perl-Dist-Zilla-Plugin-MinimumPerl	1.006
-perl-Dist-Zilla-Plugin-MinimumVersionTests	1.101421
 perl-Dist-Zilla-Plugin-ModuleBuild-XSOrPP	0.04
 perl-Dist-Zilla-Plugin-NoAutomatedTesting	0.08
-perl-Dist-Zilla-Plugin-NoTabsTests	0.01
 perl-Dist-Zilla-Plugin-OurPkgVersion	0.21
 perl-Dist-Zilla-Plugin-PerlTidy	0.21
 perl-Dist-Zilla-Plugin-PodPurler	0.094
 perl-Dist-Zilla-Plugin-PodWeaver	4.010
-perl-Dist-Zilla-Plugin-PortabilityTests	1.101420
 perl-Dist-Zilla-Plugin-Prepender	2.004
 perl-Dist-Zilla-Plugin-ProgCriticTests	1.102520
 perl-Dist-Zilla-Plugin-PromptIfStale	0.058
@@ -941,7 +925,6 @@ perl-Dist-Zilla-Plugin-ReportVersions-Tiny	1.12
 perl-Dist-Zilla-Plugin-Repository	0.24
 perl-Dist-Zilla-Plugin-Rsync	0.1
 perl-Dist-Zilla-Plugin-Signature	1.100930
-perl-Dist-Zilla-Plugin-SynopsisTests	1.101420
 perl-Dist-Zilla-Plugin-TaskWeaver	0.101629
 perl-Dist-Zilla-Plugin-Test-CPAN-Changes	0.012
 perl-Dist-Zilla-Plugin-Test-Compile	2.058
@@ -971,7 +954,6 @@ perl-Dumbbench	0.503
 perl-EBook-EPUB	0.6
 perl-EV	4.33
 perl-Eidolon	0.02
-perl-ElasticSearch	0.68
 perl-ElasticSearch-SearchBuilder	0.19
 perl-Email-Abstract	3.009
 perl-Email-Address	1.913
@@ -1045,7 +1027,6 @@ perl-Exporter-Tidy	0.08
 perl-Exporter-Tiny	1.006002
 perl-ExtUtils-CBuilder	0.280236
 perl-ExtUtils-CChecker	0.11
-perl-ExtUtils-Command	1.20
 perl-ExtUtils-Config	0.008
 perl-ExtUtils-Constant	0.25
 perl-ExtUtils-CppGuess	0.26
@@ -1139,8 +1120,6 @@ perl-File-Slurp-Unicode	0.7.1
 perl-File-Slurper	0.014
 perl-File-Sort	1.01
 perl-File-Spec-Native	1.004
-perl-File-Split	0.30
-perl-File-Stat	0.01
 perl-File-Stat-Bits	1.01
 perl-File-Stat-OO	0.03
 perl-File-Sync	0.11
@@ -1359,7 +1338,6 @@ perl-HTTP-Tiny	0.086
 perl-HTTP-Tiny-Paranoid	0.07
 perl-HTTP-Tinyish	0.18
 perl-HTTP-XSCookies	0.000021
-perl-HTTPS-Daemon	1.04
 perl-Hash-AsObject	0.13
 perl-Hash-AutoHash	1.17
 perl-Hash-AutoHash-Args	1.18
@@ -1545,7 +1523,6 @@ perl-Locale-Maketext-Lexicon	1.00
 perl-Locale-Maketext-Simple	0.21
 perl-Locale-Msgfmt	0.15
 perl-Locale-PO	0.27
-perl-Locale-PO-Utils	0.08
 perl-Locale-US	3.04
 perl-Lock-File	1.03
 perl-LockFile-Simple	0.208
@@ -1628,7 +1605,6 @@ perl-Mail-SPF-Test	1.001
 perl-Mail-SendEasy	1.2
 perl-Mail-Sender	0.903
 perl-Mail-Sendmail	0.80
-perl-Mail-SpamAssassin-Plugin-dqs	1.4.0
 perl-Mail-Transport	3.005
 perl-MailTools	2.21
 perl-Makefile-DOM	0.008
@@ -1674,7 +1650,6 @@ perl-Math-Units	1.3
 perl-Math-Utils	1.14
 perl-Math-Vec	1.01
 perl-Math-Vector-Real	0.18
-perl-MediaWiki	1.13
 perl-MediaWiki-API	0.52
 perl-MediaWiki-Bot	5.007000
 perl-MediaWiki-Bot-Plugin-Admin	3.004000
@@ -1881,7 +1856,6 @@ perl-MooseX-Types-VariantTable	0.04
 perl-MooseX-Util	0.006
 perl-MooseX-Workers	0.24
 perl-Mouse	2.5.10
-perl-MouseX-App-Cmd	0.30
 perl-MouseX-ConfigFromFile	0.05
 perl-MouseX-Getopt	0.38
 perl-MouseX-NativeTraits	1.09
@@ -1915,7 +1889,6 @@ perl-Net-DNS-Resolver-Mock	1.20230216
 perl-Net-DNS-Resolver-Programmable	0.009
 perl-Net-DNS-SEC	1.21
 perl-Net-Daemon	0.49
-perl-Net-Delicious	1.14
 perl-Net-Domain-TLD	1.75
 perl-Net-Dropbox-API	1.9
 perl-Net-FTP-RetrHandle	0.2
@@ -1961,7 +1934,6 @@ perl-Net-Patricia	1.22
 perl-Net-Pcap	0.21
 perl-Net-Ping-External	0.15
 perl-Net-RNDC	0.003
-perl-Net-RabbitMQ	0.2.0
 perl-Net-SFTP-Foreign	1.93
 perl-Net-SLP	1.5
 perl-Net-SMTP-SSL	1.04
@@ -2046,7 +2018,6 @@ perl-Overload-FileCheck	0.013
 perl-PAR	1.018
 perl-PAR-Dist	0.52
 perl-PAR-Packer	1.058
-perl-PAR-Packer-test	1.058
 perl-PAUSE-Permissions	0.17
 perl-PBKDF2-Tiny	0.005
 perl-PDF-API2	2.044

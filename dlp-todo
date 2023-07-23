@@ -1,0 +1,17 @@
+perl-HTTPS-Daemon	1.04
+https://build.opensuse.org/package/show/devel:languages:perl/perl-HTTPS-Daemon
+
+perl-Locale-PO-Utils	0.08
+2010
+
+## Not from CPAN
+perl-Mail-SpamAssassin-Plugin-dqs	1.4.0
+
+## not indexed
+perl-MouseX-App-Cmd	0.30
+perl-Net-Delicious	1.14
+perl-Net-RabbitMQ	0.2.0
+perl-MediaWiki	1.13
+
+##
+PAR-Packer-test
