@@ -256,8 +256,6 @@ perl-CPAN-Testers-Common-Article	0.47
 perl-CPAN-Uploader	0.103018
 perl-CPANPLUS	0.9914
 perl-CPANPLUS-Dist-Build	0.90
-perl-CPANPLUS-Dist-RPM	0.0.8
-perl-CPANPLUS-Dist-SUSE	0.03
 perl-CSS	1.09
 perl-CSS-LESSp	0.86
 perl-CSS-Minifier	0.01
@@ -565,7 +563,6 @@ perl-Crypt-Random-Seed	0.03
 perl-Crypt-Random-Source	0.14
 perl-Crypt-Random-TESHA2	0.01
 perl-Crypt-Rijndael	1.16
-perl-Crypt-Rot13	0.6
 perl-Crypt-SSLeay	0.72
 perl-Crypt-SaltedHash	0.09
 perl-Crypt-SmbHash	0.12
@@ -914,7 +911,6 @@ perl-Dist-Zilla-Plugin-PerlTidy	0.21
 perl-Dist-Zilla-Plugin-PodPurler	0.094
 perl-Dist-Zilla-Plugin-PodWeaver	4.010
 perl-Dist-Zilla-Plugin-Prepender	2.004
-perl-Dist-Zilla-Plugin-ProgCriticTests	1.102520
 perl-Dist-Zilla-Plugin-PromptIfStale	0.058
 perl-Dist-Zilla-Plugin-PurePerlTests	0.06
 perl-Dist-Zilla-Plugin-ReadmeAnyFromPod	0.163250
@@ -1116,7 +1112,6 @@ perl-File-ShouldUpdate	0.2.1
 perl-File-Slurp	9999.32
 perl-File-Slurp-Tiny	0.004
 perl-File-Slurp-Tree	1.24
-perl-File-Slurp-Unicode	0.7.1
 perl-File-Slurper	0.014
 perl-File-Sort	1.01
 perl-File-Spec-Native	1.004
@@ -1171,7 +1166,6 @@ perl-Future	0.50
 perl-Future-IO	0.14
 perl-GD	2.78
 perl-GD-Barcode	1.15
-perl-GD-Barcode-Code128	2.01
 perl-GD-Graph3d	0.63
 perl-GD-SVG	0.33
 perl-GD-SecurityImage	1.75
@@ -1226,7 +1220,6 @@ perl-GnuPG-Interface	1.02
 perl-Goo-Canvas	0.06
 perl-GooCanvas2	0.06
 perl-Google-ProtocolBuffers	0.12
-perl-Goose	0.016
 perl-Graph	0.9727
 perl-Graph-Easy	0.76
 perl-Graph-ReadWrite	2.10
@@ -1266,7 +1259,6 @@ perl-HTML-Escape	1.11
 perl-HTML-FillInForm	2.22
 perl-HTML-Form	6.11
 perl-HTML-FormHandler	0.40068
-perl-HTML-Format	2.12
 perl-HTML-FormatExternal	26
 perl-HTML-FormatText-WithLinks	0.15
 perl-HTML-FormatText-WithLinks-AndTables	0.07
@@ -2035,7 +2027,6 @@ perl-POE-Component-Client-DNS	1.054
 perl-POE-Component-Client-Ident	1.16
 perl-POE-Component-Generic	0.1403
 perl-POE-Component-IRC	6.93
-perl-POE-Component-IRC-Plugin-BasePoCoWrap	0.006
 perl-POE-Component-IRC-Plugin-BaseWrap	1.001001
 perl-POE-Component-Pluggable	1.28
 perl-POE-Component-Server-Chargen	1.16
@@ -2053,7 +2044,6 @@ perl-POE-Filter-Zlib	2.04
 perl-POE-Session-AttributeBased	0.10
 perl-POE-Test-Loops	1.360
 perl-POE-XS-Queue-Array	0.006
-perl-POEx-Types	1.100910
 perl-POSIX-strftime-Compiler	0.44
 perl-PPI	1.276
 perl-PPI-HTML	1.08
@@ -2090,7 +2080,6 @@ perl-Parse-ANSIColor-Tiny	0.700
 perl-Parse-Arcconf	0.03
 perl-Parse-BooleanLogic	0.10
 perl-Parse-CPAN-Authors	2.27
-perl-Parse-CPAN-Meta	1.4422
 perl-Parse-CPAN-Packages	2.40
 perl-Parse-CPAN-Packages-Fast	0.09
 perl-Parse-Distname	0.05
@@ -2186,7 +2175,6 @@ perl-Pod-Elemental-PerlMunger	0.200007
 perl-Pod-Elemental-Transformer-List	0.102001
 perl-Pod-Escapes	1.07
 perl-Pod-Eventual	0.094003
-perl-Pod-HtmlPsPdf	0.04
 perl-Pod-LaTeX	0.61
 perl-Pod-Loom	0.08
 perl-Pod-Markdown	3.300
@@ -2229,7 +2217,6 @@ perl-Proc-SyncExec	1.01
 perl-Proc-Terminator	0.05
 perl-Proc-Wait3	0.05
 perl-Process	0.30
-perl-Process-KillTree	0.02
 perl-Progress-Any	0.220
 perl-Project-Gantt	1.03
 perl-ProjectBuilder	0.14.1
@@ -2250,15 +2237,12 @@ perl-REST-Google	1.0.8
 perl-REST-Utils	0.6
 perl-RPC-XML	0.82
 perl-RPM-Header-PurePerl	1.0.2
-perl-RPM-Toolbox-Spec	0.05
 perl-RPM-VersionSort	1.00
 perl-RPM2	1.4
-perl-RPMQ	1.02
 perl-RRD-Simple	1.44
 perl-RT-Client-REST	0.72
 perl-RT-Extension-ActivityReports	1.08
 perl-RT-Extension-AddAdminCcsOnQueueChange	1.00
-perl-RT-Extension-Assets	1.05
 perl-RT-Extension-Assets-Import-CSV	1.3
 perl-RT-Extension-CommandByMail	1.00
 perl-RT-Extension-JSGantt	1.03
@@ -2270,8 +2254,6 @@ perl-RT-Extension-PriorityAsString	1.04
 perl-RT-Extension-ReferenceIDoitObjects	1.00
 perl-RT-Extension-ResetPassword	1.11
 perl-RT-Extension-TimeWorkedReport	1.04
-perl-RT-admin-tools	0.1
-perl-RTx-AssetTracker	2.0.0b2
 perl-Readonly	2.05
 perl-Readonly-XS	1.05
 perl-Redis	2.000
@@ -2314,9 +2296,6 @@ perl-Router-Simple	0.17
 perl-SDL	2.548
 perl-SGML-DTDParse	2.00
 perl-SGML-Parser-OpenSP	0.994
-perl-SGMLS	1.1
-perl-SHARYANTO-Package-Util	0.56
-perl-SHARYANTO-String-Util	0.24
 perl-SMS-Send	1.06
 perl-SNMP-Info	3.92
 perl-SOAP	0.28
@@ -2345,7 +2324,6 @@ perl-Safe	2.35
 perl-Safe-Isa	1.000010
 perl-Sah-Schemas-Int	0.077
 perl-Sah-Schemas-Rinci	1.1.98.0
-perl-Sane	0.05
 perl-Scalar-Defer	0.23
 perl-Scalar-List-Utils	1.63
 perl-Scalar-String	0.003
@@ -2407,7 +2385,6 @@ perl-Spawn-Safe	2.006
 perl-Specio	0.48
 perl-Specio-Library-Path-Tiny	0.05
 perl-Spiffy	0.46
-perl-Spooky-Patterns-XS	1.55
 perl-Spoon	0.24
 perl-Spreadsheet-DataToExcel	0.0104
 perl-Spreadsheet-ParseExcel	0.65
@@ -2469,7 +2446,6 @@ perl-Sub-Name	0.27
 perl-Sub-Override	0.09
 perl-Sub-Quote	2.006008
 perl-Sub-Retry	0.06
-perl-Sub-Spec	1.0.7
 perl-Sub-Uplevel	0.2800
 perl-Switch	2.17
 perl-Symbol-Global-Name	0.05
@@ -2483,7 +2459,6 @@ perl-Syntax-Highlight-Perl	1.0
 perl-Syntax-Keyword-Gather	1.003002
 perl-Syntax-Keyword-Junction	0.003008
 perl-Syntax-Keyword-Try	0.28
-perl-Sys-CPU	0.61
 perl-Sys-Hostname-Long	1.5
 perl-Sys-Info-Base	0.7807
 perl-Sys-LoadAvg	0.03
@@ -2498,7 +2473,6 @@ perl-Sys-Syslog	0.36
 perl-Sys-Utmp	1.8
 perl-Sysadm-Install	0.48
 perl-System-Command	1.122
-perl-SystemPerl	1.344
 perl-TAP-Formatter-HTML	0.11
 perl-TAP-Formatter-JUnit	0.16
 perl-TAP-Harness-Archive	0.18
@@ -2563,12 +2537,10 @@ perl-Term-Detect-Software	0.223
 perl-Term-EditorEdit	0.0016
 perl-Term-Encoding	0.03
 perl-Term-Filter	0.03
-perl-Term-Menu	0.10
 perl-Term-ProgressBar	2.23
 perl-Term-ProgressBar-Quiet	0.31
 perl-Term-ProgressBar-Simple	0.03
 perl-Term-Prompt	1.04
-perl-Term-ReadKey	2.38
 perl-Term-ReadLine-Gnu	1.46
 perl-Term-ReadLine-Perl	1.0303
 perl-Term-ReadPassword	0.11
@@ -2646,7 +2618,6 @@ perl-Test-InDistDir	1.112071
 perl-Test-Inter	1.10
 perl-Test-Is	20140823.1
 perl-Test-JSON	0.11
-perl-Test-JSON-Meta	0.14
 perl-Test-Kit	2.15
 perl-Test-Kwalitee	1.28
 perl-Test-LWP-UserAgent	0.036
@@ -2730,7 +2701,6 @@ perl-Test-TableDriven	0.02
 perl-Test-Taint	1.08
 perl-Test-TempDir	0.11
 perl-Test-TempDir-Tiny	0.018
-perl-Test-Tester	0.109
 perl-Test-Time	0.092
 perl-Test-Timer	2.12
 perl-Test-Toolbox	0.4
@@ -2783,7 +2753,6 @@ perl-Text-CSV_XS	1.50
 perl-Text-Capitalize	1.5
 perl-Text-CharWidth	0.04
 perl-Text-Clip	0.0014
-perl-Text-DelimMatch	1.06
 perl-Text-Diff	1.45
 perl-Text-EtText	2.2
 perl-Text-FindIndent	0.11
@@ -2839,7 +2808,6 @@ perl-Text-VisualWidth-PP	0.05
 perl-Text-WideChar-Util	0.172
 perl-Text-WikiFormat	0.81
 perl-Text-WordDiff	0.09
-perl-Text-Wrap	2009.0305
 perl-Text-WrapI18N	0.06
 perl-Text-Wrapper	1.05
 perl-Text-Xslate	3.5.9
@@ -2878,7 +2846,6 @@ perl-Time-Period	1.25
 perl-Time-Piece	1.3401
 perl-Time-Progress	2.14
 perl-Time-Tiny	1.08
-perl-Time-modules	2013.0912
 perl-TimeDate	2.33
 perl-Tk	804.036
 perl-Tk-Clock	0.44
@@ -2952,7 +2919,6 @@ perl-Verilog-Perl	3.480
 perl-Version-Next	1.000
 perl-Version-Requirements	0.101023
 perl-Version-Util	0.732
-perl-Video-Subtitle-SRT	0.05
 perl-Vimana	2.26
 perl-WWW-BashOrg	1.001003
 perl-WWW-Curl	4.17
@@ -2960,12 +2926,9 @@ perl-WWW-Curl-Simple	0.100191
 perl-WWW-DreamHost-API	1.07
 perl-WWW-Form-UrlEncoded	0.26
 perl-WWW-GetPageTitle	0.0104
-perl-WWW-Google-Auth-ClientLogin	0.04
-perl-WWW-Google-Buzz	0.03
 perl-WWW-Google-Calculator	0.07
 perl-WWW-Google-PageRank	0.19
 perl-WWW-Google-Time	1.001005
-perl-WWW-Google-URLShortener	0.24
 perl-WWW-Google-UserAgent	0.23
 perl-WWW-Mechanize	2.17
 perl-WWW-Mechanize-CGI	0.3
@@ -2979,8 +2942,6 @@ perl-WWW-Pastebin-Base-Retrieve	0.002
 perl-WWW-Pastebin-PastebinCom-Create	1.003
 perl-WWW-RobotRules	6.02
 perl-WWW-Scraper-ISBN	1.05
-perl-WWW-Scraper-ISBN-Driver	0.18
-perl-WWW-Scraper-ISBN-Record	0.17
 perl-WWW-Shorten	3.094
 perl-WWW-Shorten-Simple	0.02
 perl-WWW-Wikipedia	2.05
@@ -3116,16 +3077,13 @@ perl-curry	2.000001
 perl-enum	1.12
 perl-ex-override	1.1
 perl-experimental	0.031
-perl-file-rsyncp	0.74
 perl-forks	0.36
-perl-gettext	1.07
 perl-goto-file	0.005
 perl-indirect	0.39
 perl-jmx4perl	1.13
 perl-ldap	0.68
 perl-lib-abs	0.95
 perl-lib-relative	1.001
-perl-libconfigfile	1.1.1
 perl-libintl-perl	1.33
 perl-libwww-perl	6.71
 perl-libxml-perl	0.08
@@ -3137,7 +3095,6 @@ perl-namespace-autoclean	0.29
 perl-namespace-clean	0.27
 perl-namespace-sweep	0.006
 perl-parent	
-perl-postfix-policyd-spf	2.010
 perl-prefork	1.05
 perl-psh	1.8.1
 perl-recommended	0.003

@@ -6,12 +6,48 @@ perl-Locale-PO-Utils	0.08
 
 ## Not from CPAN
 perl-Mail-SpamAssassin-Plugin-dqs	1.4.0
+perl-RT-Extension-Assets	1.05
+perl-RT-admin-tools	0.1
+perl-RTx-AssetTracker	2.0.0b2
+perl-Spooky-Patterns-XS	1.55
+perl-postfix-policyd-spf	2.010
+perl-libconfigfile	1.1.1
+perl-RPM-Toolbox-Spec	0.05
 
 ## not indexed
 perl-MouseX-App-Cmd	0.30
 perl-Net-Delicious	1.14
 perl-Net-RabbitMQ	0.2.0
 perl-MediaWiki	1.13
+perl-Pod-HtmlPsPdf	0.04
+perl-SGMLS	1.1
+perl-SHARYANTO-Package-Util	0.56
+perl-SHARYANTO-String-Util	0.24
+perl-RPMQ	1.02
+perl-Sane	0.05
+perl-Sub-Spec	1.0.7
+perl-Sys-CPU	0.61
+perl-Term-ReadKey	2.38
+perl-Text-DelimMatch	1.06
+perl-Text-Wrap	2009.0305
+perl-Video-Subtitle-SRT	0.05
+perl-WWW-Google-URLShortener	0.24
+perl-WWW-Scraper-ISBN-Driver	0.18
+perl-WWW-Scraper-ISBN-Record	0.17
+perl-SystemPerl	1.344
+perl-CPANPLUS-Dist-RPM	0.0.8
+perl-CPANPLUS-Dist-SUSE	0.03
+perl-gettext	1.07
+perl-Crypt-Rot13	0.6
+perl-Goose	0.016
+perl-File-Slurp-Unicode	0.7.1
+perl-HTML-Format	2.12
+perl-Time-modules	2013.0912
 
 ##
 PAR-Packer-test
+
+## wrong package name
+
+perl-file-rsyncp	0.74
+perl-GD-Barcode-Code128	2.01

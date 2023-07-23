@@ -19,3 +19,13 @@ perl-ElasticSearch	0.68
 perl-ExtUtils-Command	1.20
 perl-File-Split	0.30
 perl-File-Stat	0.01
+perl-POE-Component-IRC-Plugin-BasePoCoWrap	0.006
+perl-POEx-Types	1.100910
+perl-Parse-CPAN-Meta	1.4422
+perl-Process-KillTree	0.02
+perl-Term-Menu	0.10
+perl-Test-JSON-Meta	0.14
+perl-Test-Tester	0.109
+perl-WWW-Google-Auth-ClientLogin	0.04
+perl-WWW-Google-Buzz	0.03
+perl-Dist-Zilla-Plugin-ProgCriticTests	1.102520
