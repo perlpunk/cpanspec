@@ -190,7 +190,7 @@ use warnings;
 use 5.010;
 
 our $NAME    = "cpanspec";
-our $VERSION = '1.84.00';
+our $VERSION = '1.84.01';
 my $script = __FILE__;
 
 use Cwd;
@@ -907,7 +907,11 @@ if ($follow and $buildrpm) {
     $buildrpm = 0;
 }
 if ($dlp) {
-    my $tsv = "$Bin/dlp.tsv";
+    my $file = "version-snapshot/opensuse-dlp.tsv";
+    my $tsv = "$Bin/share/$file";
+    unless (-e $tsv) {
+        $tsv = "/usr/share/cpanspec/$file";
+    }
     $version_snapshot = read_version_snapshot($tsv);
 }
 
