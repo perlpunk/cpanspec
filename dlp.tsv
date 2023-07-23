@@ -3094,7 +3094,7 @@ perl-multidimensional	0.014
 perl-namespace-autoclean	0.29
 perl-namespace-clean	0.27
 perl-namespace-sweep	0.006
-perl-parent	
+perl-parent	0.238
 perl-prefork	1.05
 perl-psh	1.8.1
 perl-recommended	0.003
