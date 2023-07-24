@@ -764,6 +764,7 @@ sub next_version {
     unless (defined $current) {
         die "$module not found in snapshot";
     }
+    $current =~ s/^v//;
     my $nextv = version->parse($next); # version object
     my $normal = $nextv->normal;       # normalized version string with more than one dot
     unless ($current) {
@@ -804,7 +805,7 @@ sub next_version {
         }
         return $normal;
     }
-    die "Unexpected version for $module: '$next'";
+    die "Unexpected version for $module: '$next' ($current)";
 }
 
 sub extract_old_changes($$) {
@@ -868,7 +869,7 @@ sub is_license_file {
 }
 
 sub debug_version {
-    warn sprintf "%-40s  %10s --> %10s\n", @_;
+    warn sprintf "%-50s  %10s --> %10s\n", @_;
 }
 # Set locale to en_US.UTF8 so that dates in changelog will be correct
 # if using another locale. Also ensures writing out UTF8. (Thanks to
@@ -1278,10 +1279,12 @@ Version:        $rpm_version
 Release:        $release
 END
 
+    my $skip_main_module_provide = 0;
     if ($rpm_version ne $version) {
         print $spec "%define cpan_version $version\n";
         $version_string = '%{cpan_version}';
         print $spec "Provides:  perl($module) = $rpm_version\n";
+        $skip_main_module_provide = 1;
     }
 
     print $spec "Epoch:          $epoch\n" if (defined($epoch));
@@ -1412,15 +1415,17 @@ END
         printf $spec "%-16s%s\n", "Provides:", $prov;
     }
     for my $package (sort keys %provides) {
+        next if $skip_main_module_provide and $package eq $module;
         my $version = $provides{ $package }->{version};
-        my $rpm_version = map_version(module => $package, $version);
-        if ($rpm_version) {
-            $package .= " = $rpm_version";
+        my $prov = "perl($package)";
+        if ($version) {
+            my $rpm_version = map_version(module => $package, $version);
+            $prov .= " = $rpm_version";
         }
-        my $line = sprintf "%-16s%s\n", "Provides:", $package;
+        my $line = sprintf "%-16s%s\n", "Provides:", $prov;
         print $spec $line;
     }
-    print $spec "%define __perllib_provides /bin/true\n";
+    print $spec "%define         __perllib_provides /bin/true\n";
     for my $dep (sort(keys(%recommends))) {
         next if (is_in_core($dep, $recommends{$dep}));
         next if ($dep eq 'perl');
