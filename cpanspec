@@ -722,8 +722,9 @@ my @fixed_versions = qw/
     Module::Build CPAN::Meta::Requirements ExtUtils::PkgConfig Test::Exception
     Test::Number::Delta Time::Duration DateTime::Locale File::Path
 /;
-sub map_version($$) {
-    my ($module, $version) = @_;
+sub map_version($$$) {
+    my ($type, $module, $version) = @_;
+#    warn __PACKAGE__.':'.__LINE__.": ====== map_version(@_)\n";
     if (grep { $module eq $_ } @fixed_versions) {
         my $nv = $version . "000000";
         if ($nv =~ /^(.*\.[0-9]{6})/) {
@@ -731,7 +732,9 @@ sub map_version($$) {
         }
     }
     if ($dlp) {
-        return next_version($module, $version);
+        my $v = next_version($type, $module, $version);
+        $v =~ s/^v//;
+        return $v;
     }
     return $version;
 }
@@ -739,22 +742,25 @@ sub map_version($$) {
 sub read_version_snapshot {
     my ($tsv) = @_;
     my %modules;
+    my %dist;
     open my $fh, '<', $tsv or die $!;
     while (my $line = <$fh>) {
         chomp $line;
-        my ($name, $version) = split m/\t/, $line;
-        $modules{ $name } = $version;
+        my ($dist, $distv, $module, $version) = split m/\t/, $line;
+        # modules without their own version get the distribution version
+        $version = $distv if $version eq 'undef';
+        $modules{ $module } = $version;
+        $dist{ $dist } = $distv;
     }
     close $fh;
-    return \%modules;
+    return { module => \%modules, dist => \%dist };
 }
 
 sub next_version {
-    my ($module, $next) = @_;
-    my $details = module_details($module);
-    warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\$details], ['details']);
+    my ($type, $module, $next) = @_;
     my $dist = $module =~ s/::/-/gr;
-    my $current = $version_snapshot->{ "perl-$dist" };
+    my $name = $module;
+    my $current = $version_snapshot->{ $type }->{ $name };
     unless (defined $current) {
         die "$module not found in snapshot";
     }
@@ -1239,7 +1245,7 @@ for my $ofile (@args) {
     }
 
     rmtree($basedir);
-    my $rpm_version = map_version($module, $version);
+    my $rpm_version = map_version(module => $module, $version);
     debug_version($module, $version, $rpm_version);
     my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
 
@@ -1371,7 +1377,7 @@ END
             }
             printf $spec "%-16s%s", "BuildRequires:", "perl($dep)";
             if ($build_requires{$dep}) {
-                my $mapped = map_version($dep, $build_requires{$dep});
+                my $mapped = map_version(module => $dep, $build_requires{$dep});
                 debug_version($dep, $build_requires{$dep},$mapped);
                 print $spec " >= $mapped";
             }
@@ -1390,7 +1396,7 @@ END
         }
         printf $spec "%-16s%s", "Requires:", "perl($dep)";
         if ($requires{$dep}) {
-            my $mapped = map_version($dep, $requires{$dep});
+            my $mapped = map_version(module => $dep, $requires{$dep});
                 debug_version($dep, $requires{$dep},$mapped);
             print $spec " >= $mapped";
         }
@@ -1405,6 +1411,16 @@ END
     for my $prov (@add_provides) {
         printf $spec "%-16s%s\n", "Provides:", $prov;
     }
+    for my $package (sort keys %provides) {
+        my $version = $provides{ $package }->{version};
+        my $rpm_version = map_version(module => $package, $version);
+        if ($rpm_version) {
+            $package .= " = $rpm_version";
+        }
+        my $line = sprintf "%-16s%s\n", "Provides:", $package;
+        print $spec $line;
+    }
+    print $spec "%define __perllib_provides /bin/true\n";
     for my $dep (sort(keys(%recommends))) {
         next if (is_in_core($dep, $recommends{$dep}));
         next if ($dep eq 'perl');
@@ -1708,7 +1724,7 @@ sub prereqs_from_metayaml {
 
     if ($meta->{provides}) {
         for my $pkg (keys %{ $meta->{provides} || {} }) {
-            $provides{ $pkg } = 1;
+            $provides{ $pkg } = $meta->{provides}->{ $pkg };
         }
     }
 
@@ -1739,7 +1755,7 @@ sub prereqs_from_metajson {
     my (%provides, %build, %run, %rec);
     if ($metajson->{provides}) {
         for my $pkg (keys %{ $metajson->{provides} || {} }) {
-            $provides{ $pkg } = 1;
+            $provides{ $pkg } = $metajson->{provides}->{ $pkg };
         }
     }
 
@@ -1772,6 +1788,7 @@ sub parse_provides {
     my %provides;
     my $scanner = Perl::PrereqScanner->new;
     foreach my $test (grep /\.(pm|t|PL|pl)/, @$files) {
+        next unless $test =~ m{^(([^/]+\.pm)|(lib/.*\.pm$))};
         my $doc = PPI::Document->new($path . "/" . $test);
 
         next unless ($doc);
@@ -1779,7 +1796,7 @@ sub parse_provides {
         # Get the name of the main package
         my $pkg = $doc->find_first('PPI::Statement::Package');
         if ($pkg) {
-            $provides{$pkg->namespace} = 1;
+            $provides{$pkg->namespace} = { file => $test, version => $pkg->version };
         }
 
     }
