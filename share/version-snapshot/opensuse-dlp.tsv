@@ -14929,7 +14929,7 @@ PAR-Packer	1.058	PAR::Filter::Bytecode	undef
 PAR-Packer	1.058	PAR::Filter::Obfuscate	undef
 PAR-Packer	1.058	PAR::Filter::PatchContent	undef
 PAR-Packer	1.058	PAR::Filter::PodStrip	undef
-PAR-Packer	1.058	PAR::Packer	1.059
+PAR-Packer	1.058	PAR::Packer	1.058
 PAR-Packer	1.058	PAR::StrippedPARL::Base	0.975
 PAR-Packer	1.058	pp	0.992
 Parse-ANSIColor-Tiny	0.700	Parse::ANSIColor::Tiny	0.700
@@ -16077,7 +16077,7 @@ PerlIO-utf8_strict	0.010	PerlIO::utf8_strict	0.010
 PerlIO-via-dynamic	0.14	PerlIO::via::dynamic	0.14
 PerlIO-via-Timeout	0.32	PerlIO::via::Timeout	0.32
 Perl-LanguageServer	2.0.2	builder::MyBuilder	undef
-Perl-LanguageServer	2.5.0	Perl::LanguageServer	2.005000
+Perl-LanguageServer	2.5.0	Perl::LanguageServer	2.5.0
 Perl-LanguageServer	2.5.0	Perl::LanguageServer::DebuggerBridge	undef
 Perl-LanguageServer	2.5.0	Perl::LanguageServer::DebuggerInterface	1.07
 Perl-LanguageServer	2.5.0	Perl::LanguageServer::DebuggerProcess	undef
