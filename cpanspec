@@ -415,31 +415,6 @@ sub get_file($) {
     return ($file, $name, $version, $type);
 }
 
-sub module_details {
-    my ($module) = @_;
-    my %details;
-    my ($file, $name, $version, $type);
-    # Look up $module in 02packages.details.txt.
-    verbose("Get module $module");
-    read_packages();
-    my ($m, $dist);
-    if ($m = $packages->package($module) and $dist = $m->distribution()) {
-        warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\$m], ['m']);
-        warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\$dist], ['dist']);
-        $details{file} =  basename($dist->filename());
-        $details{name} = $dist->dist;
-        $details{version} = $dist->version =~ s/^v//r;
-        my $p = $dist->packages;
-        warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\%details], ['details']);
-        warn __PACKAGE__.':'.__LINE__.$".Data::Dumper->Dump([\$p], ['p']);
-    }
-    else {
-        warn "Failed to parse '$file' or find a module by that name, skipping...\n";
-    }
-    return \%details;
-    return ($file, $name, $version, $type);
-}
-
 sub get_source($) {
     my $file = shift;
 
