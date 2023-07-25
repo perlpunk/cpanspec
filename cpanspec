@@ -761,12 +761,13 @@ sub next_version {
     my $dist = $module =~ s/::/-/gr;
     my $name = $module;
     my $current = $version_snapshot->{ $type }->{ $name };
-    unless (defined $current) {
-        die "$module not found in snapshot";
-    }
-    $current =~ s/^v//;
     my $nextv = version->parse($next); # version object
     my $normal = $nextv->normal;       # normalized version string with more than one dot
+    unless (defined $current) {
+        warn "$module not found in snapshot";
+        return $normal;
+    }
+    $current =~ s/^v//;
     unless ($current) {
         return $normal;
     }
@@ -1794,14 +1795,24 @@ sub parse_provides {
     my $scanner = Perl::PrereqScanner->new;
     foreach my $test (grep /\.(pm|t|PL|pl)/, @$files) {
         next unless $test =~ m{^(([^/]+\.pm)|(lib/.*\.pm$))};
-        my $doc = PPI::Document->new($path . "/" . $test);
+        my $doc = PPI::Document->new("$path/$test");
 
         next unless ($doc);
 
         # Get the name of the main package
         my $pkg = $doc->find_first('PPI::Statement::Package');
         if ($pkg) {
-            $provides{$pkg->namespace} = { file => $test, version => $pkg->version };
+            my $ns = $pkg->namespace;
+            my $version = $pkg->version;
+            unless ($version) {
+                my $prov = find_version_statements("$path/$test");
+                for my $key (keys %$prov) {
+                    $provides{ $ns } = { file => $test, version => $prov->{ $key } };
+                }
+            }
+            else {
+                $provides{$ns} = { file => $test, version => $version };
+            }
         }
 
     }
@@ -2078,6 +2089,139 @@ sub filter_provides {
         }
     }
     print $sh "\n";
+}
+
+# copied from https://github.com/rpm-software-management/rpm/blob/master/scripts/perl.prov
+# and modernized a bit
+sub find_version_statements {
+    my ($file) = @_;
+    my %provides;
+
+    open my $fh, '<', $file or die "Could not open file '$file' for reading: $!\n";
+
+    my ($package, $version, $incomment, $inover, $inheredoc);
+
+    while (<$fh>) {
+
+        # Skip contents of HEREDOCs
+        if (defined $inheredoc) {
+            # We're in a HEREDOC; continue until the end of it
+            if (m/^$inheredoc\s*$/) {
+                $inheredoc = undef;
+            }
+            next;
+        }
+
+        # skip the documentation
+
+        # we should not need to have item in this if statement (it
+        # properly belongs in the over/back section) but people do not
+        # read the perldoc.
+
+        if (m/^=(head[1-4]|pod|for|item)/) {
+            $incomment = 1;
+        }
+        if (m/^=(cut)/) {
+            $incomment = 0;
+            $inover = 0;
+        }
+        if (m/^=(over)/) {
+            $inover = 1;
+        }
+        if (m/^=(back)/) {
+            $inover = 0;
+        }
+        if ($incomment || $inover || m/^\s*#/) {
+            next;
+        }
+        # skip the data section
+        if (m/^__(DATA|END)__$/) {
+            last;
+        }
+
+        # Find the start of a HEREDOC
+        if (m/<<\s*[\"\'](\w+)[\"\']\s*;\s*$/) {
+            $inheredoc = $1;
+        }
+
+        # not everyone puts the package name of the file as the first
+        # package name so we report all namespaces except some common
+        # false positives as if they were provided packages (really ugly).
+        if (m/^\s*package\s+([_:a-zA-Z0-9]+)\s*(?:v?([0-9_.]+)\s*)?[;\{]/) {
+            $package = $1;
+            $version = $2;
+            if ($package eq 'main') {
+                undef $package;
+            }
+            else {
+                # If $package already exists in the %provides hash, it means
+                # the package definition is broken up over multiple blocks.
+                # In that case, don't stomp a previous $VERSION we might have
+                # found.  (See BZ#214496.)
+                $provides{$package} = $version unless (exists $provides{$package});
+            }
+        }
+
+        # after we found the package name take the first assignment to
+        # $VERSION as the version number. Exporter requires that the
+        # variable be called VERSION so we are safe.
+
+        # here are examples of VERSION lines from the perl distribution
+
+        #FindBin.pm:$VERSION = $VERSION = sprintf("%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/);
+        #ExtUtils/Install.pm:$VERSION = substr q$Revision: 1.9 $, 10;
+        #CGI/Apache.pm:$VERSION = (qw$Revision: 1.9 $)[1];
+        #DynaLoader.pm:$VERSION = $VERSION = "1.03";     # avoid typo warning
+        #General.pm:$Config::General::VERSION = 2.33;
+        #
+        # or with the new "our" pragma you could (read will) see:
+        #
+        #    our $VERSION = '1.00'
+        if ($package && m/^\s*(our\s+)?\$(\Q$package\E::)?VERSION\s*=\s+/) {
+
+        # first see if the version string contains the string
+        # '$Revision' this often causes bizarre strings and is the most
+        # common method of non static numbering.
+
+            if (m/\$Revision: (\d+[.0-9]+)/) {
+                $version = $1;
+            }
+            elsif (m/=\s*['"]?(\d+[._0-9]+)['"]?/) {
+
+                # look for a static number hard coded in the script
+
+                $version = $1;
+            }
+            $provides{$package} = $version;
+        }
+
+        # Allow someone to have a variable that defines virtual packages
+        # The variable is called $RPM_Provides.  It must be scoped with
+        # "our", but not "local" or "my" (just would not make sense).
+        #
+        # For instance:
+        #
+        #     $RPM_Provides = "blah bleah"
+        #
+        # Will generate provides for "blah" and "bleah".
+        #
+        # Each keyword can appear multiple times.  Don't
+        #  bother with datastructures to store these strings,
+        #  if we need to print it print it now.
+
+        if (m/^\s*(our\s+)?\$RPM_Provides\s*=\s*["'](.*)['"]/i) {
+            foreach $_ (split(/\s+/, $2)) {
+                print "$_\n";
+            }
+        }
+
+    }
+
+    if (defined $inheredoc) {
+        die "Unclosed HEREDOC [$inheredoc] in file: '$file'\n";
+    }
+
+    return \%provides;
 }
 
 # vi: set ai et:
