@@ -1,0 +1,47 @@
+perl-Text-Wrap: |
+    Text-Tabs+Wrap-2009.0305.tar.gz
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/CHANGELOG
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/lib/Text/Tabs.pm
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/lib/Text/Wrap.pm
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/Makefile.PL
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/MANIFEST
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/META.yml
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/README
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/37000.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/39548.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/belg4mit.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/dandv.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/dnsparks.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/fill.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/Jacobson2.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/Jacobson.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/Jochen.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/sep2.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/sep.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/tabs.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/wrap_separator2.t
+    BOGUS PATH DETECTED: Text-Tabs+Wrap-2009.0305/t/wrap.t
+    Skipping Text-Tabs+Wrap-2009.0305.tar.gz with 21 path elements!
+perl-MediaWiki-Bot-Plugin-Steward: |
+    %perl_make_install
+    -# do not perl_process_packlist (noarch)
+    -# remove .packlist file
+    -%{__rm} -rf $RPM_BUILD_ROOT%perl_vendorarch
+    -# remove perllocal.pod file
+    -%{__rm} -rf $RPM_BUILD_ROOT%perl_archlib
+    +%perl_process_packlist
+perl-Music-Tag: |
+  -%__sed -i '/^auto_install/d' Makefile.PL
+  ...
+perl-Net-Twitter-Lite: |
+  -#BuildRequires:   perl(Net::HTTP) >= 0, perl(Net::HTTP) != 6.04, perl(Net::HTTP) != 6.05
+  +#BuildRequires:  perl(Net::HTTP) >= >= 0, != 6.04, != 6.05
+perl-Scrappy: |
+    -# PATCH-FIX-UPSTREAM https://rt.cpan.org/Public/Bug/Display.html?id=82142
+    -Patch1:         0001-Plugins-Call-initializers-in-correct-order.patch
+perl-Text-Padding: |
+    -./Build pure_install --destdir "%{buildroot}" --installdirs vendor
+    -%perl_process_packlist
+    +perl Build.PL --installdirs=vendor
+    +./Build build --flags=%{?_smp_mflags}
+
