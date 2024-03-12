@@ -251,10 +251,7 @@
       <person userid="M0ses" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-App-BundleDeps" version="0.00006" srcmd5="4f4903eb8ca3d6fa0fd77c4f4476176b" changesmd5="" maxmtime="" release="6">
-    <failure repo="SLE_15_SP4" time="1649869173" srcmd5="6b6d36ed34fc0335e1c8ed738bfe877a"/>
-    <failure repo="SLE_15_SP3" time="1618574472" srcmd5="6b6d36ed34fc0335e1c8ed738bfe877a"/>
-  </package>
+  <package project="devel:languages:perl" name="perl-App-BundleDeps" version="0.0.60" srcmd5="1e17fe96feaa47788b47130dbead4444" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-App-CELL" version="0.231" srcmd5="91e8b6142f9773bfe51d0284744ef4bb" changesmd5="" maxmtime="" release="11"/>
   <package project="devel:languages:perl" name="perl-App-CLI" version="0.52" srcmd5="8e768ecc9bc5cf58ce300c5ad87613de" changesmd5="" maxmtime="" release="39" verifymd5="ec0e50d10d1eec69c5f8e456388b6792">
     <persons>
@@ -309,8 +306,8 @@
     <failure repo="15.4" time="1648535239" srcmd5="238a891d7eed9ae37ddaac967cc20b0d"/>
   </package>
   <package project="devel:languages:perl" name="perl-App-Termcast" version="0.13" srcmd5="69d05e869cb15a236df1e9c5da3c2c3b" changesmd5="1976c6c1f62e6fe57685d798db2dda4f" maxmtime="2015-04-14 05:23:28 UTC" release="1"/>
-  <package project="devel:languages:perl" name="perl-App-XML-DocBook-Builder" version="0.1100" srcmd5="7e2412ca21c1211575e4a4034bb35429" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-App-ZofCMS" version="1.001008" srcmd5="eae9cd705aabc3388013cb9a043526b4" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-App-XML-DocBook-Builder" version="0.110.0" srcmd5="1931885aff49b6f2ab256e888fc8bfd6" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-App-ZofCMS" version="1.1.8" srcmd5="8570a520d3ff4dbfa842a76edd6b3ff6" changesmd5="" maxmtime="" release="1" verifymd5="4ae81c8c8c853d6428ddaeef891ef152"/>
   <package project="devel:languages:perl" name="perl-App-cpanminus" version="1.7047" srcmd5="196acd94a3b5a215167db383f11d844d" changesmd5="" maxmtime="" release="46" verifymd5="5f97ca23da282652d23f568f593b69fd"/>
   <package project="devel:languages:perl" name="perl-App-cpm" version="0.997015" srcmd5="d40f7bb7b8bf3e2b7f5266e94b9237e4" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-App-gcal" version="1.120860" srcmd5="e19ff1fec3f7ad9c6da557a37ad382d1" changesmd5="d6c4758d9e968cf3ec4cc8a59141ec52" maxmtime="2015-11-30 13:41:27 UTC" release="2"/>
@@ -760,7 +757,7 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-CLI-Osprey" version="0.08" srcmd5="9b8510f7d57d3267aea94d8855a02f10" changesmd5="" maxmtime="" release="3"/>
-  <package project="devel:languages:perl" name="perl-CMS-MediaWiki" version="0.8014" srcmd5="e586f84e6a326e89132bd98bde6b33d3" changesmd5="11cb7b6456278ff5912a05d107e54c1d" maxmtime="2015-04-16 20:16:04 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-CMS-MediaWiki" version="0.801.400" srcmd5="1aefbd878eb5df67627326123bf3621c" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="lrupp" role="maintainer"/>
       <person userid="lrupp" role="bugowner"/>
@@ -1008,7 +1005,7 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Catalyst-DispatchType-Regex" version="5.90035" srcmd5="f614b9d0d10de10c461ab175c04e3670" changesmd5="a299134c8f02cddf74a91c881a299cde" maxmtime="2015-04-15 14:34:04 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-Catalyst-DispatchType-Regex" version="5.900.350" srcmd5="9aed83fb4ab88f8653ca15df1b63570e" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Catalyst-Engine-Apache" version="1.16" srcmd5="d8c2bffe323be06512533b8422f6ce07" changesmd5="0e5aa09229a3ded1b554821ff2a7dc8f" maxmtime="2011-04-15 07:27:17 UTC" release="3">
     <failure repo="SLE_15_SP4" time="1649907347" srcmd5="d8c2bffe323be06512533b8422f6ce07"/>
     <failure repo="SLE_15_SP3" time="1618575121" srcmd5="d8c2bffe323be06512533b8422f6ce07"/>
@@ -1365,10 +1362,7 @@
       <person userid="gerritbeine" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Class-Light" version="0.01003" srcmd5="20c5512acf569c952fc6f2cd6abf6cee" changesmd5="7a9f87c8ded4d2299d40da10f7e74e92" maxmtime="2011-04-14 07:57:13 UTC" release="1">
-    <failure repo="SLE_15_SP4" time="1649844490" srcmd5="20c5512acf569c952fc6f2cd6abf6cee"/>
-    <failure repo="SLE_15_SP3" time="1618573600" srcmd5="20c5512acf569c952fc6f2cd6abf6cee"/>
-  </package>
+  <package project="devel:languages:perl" name="perl-Class-Light" version="0.10.30" srcmd5="77fa60f7d33b4011abae15f911d61e42" changesmd5="" maxmtime="" release="1" verifymd5="becf3ec2a11a9a52d3a4d48ee3dc1111"/>
   <package project="devel:languages:perl" name="perl-Class-Load" version="0.25" srcmd5="c3216c9f0a6c6c89515b7b03b5a3d8bf" changesmd5="" maxmtime="" release="36" verifymd5="2c65d6d44b68c878fc45a64a7120fb93">
     <persons>
       <person userid="tabraham1" role="maintainer"/>
@@ -1427,7 +1421,7 @@
     <failure repo="SLE_15_SP4" time="1649844098" srcmd5="cc77abf070387ddcc0eb4a53d0a893fd"/>
     <failure repo="SLE_15_SP3" time="1618573422" srcmd5="cc77abf070387ddcc0eb4a53d0a893fd"/>
   </package>
-  <package project="devel:languages:perl" name="perl-Class-Null" version="2.110730" srcmd5="67239f9a56abb7b0f027b522df622748" changesmd5="e0dca9ecf9a8e674637bebbe1f618ba2" maxmtime="2012-04-20 07:15:58 UTC" release="1" verifymd5="106de9a4a0a09c590ed4b327067fcc66"/>
+  <package project="devel:languages:perl" name="perl-Class-Null" version="2.110.730" srcmd5="8dfad22606f9becc65b850f08a28c593" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Class-OOorNO" version="0.011" srcmd5="25781158fa9c46ef6af8346aa7fbb0c3" changesmd5="8300985e0a43d70d35592441b7d453ab" maxmtime="2011-04-22 20:56:31 UTC" release="1">
     <failure repo="SLE_15_SP4" time="1649844098" srcmd5="25781158fa9c46ef6af8346aa7fbb0c3"/>
     <failure repo="SLE_15_SP3" time="1618573422" srcmd5="25781158fa9c46ef6af8346aa7fbb0c3"/>
@@ -1627,7 +1621,7 @@
       <person userid="pmonrealgonzalez" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Config-JSON" version="1.5202" srcmd5="86143589475f6d24b2c6646708e5c396" changesmd5="ef3dbd0d0f27cb53f087e37fa317be42" maxmtime="2015-04-13 18:11:48 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Config-JSON" version="1.520.200" srcmd5="87a20e91e1a8e8b3594d6449db7be8d5" changesmd5="" maxmtime="" release="1" verifymd5="449a90177b51282495f2bce207395e7f">
     <persons>
       <person userid="mnhauke" role="maintainer"/>
     </persons>
@@ -1748,10 +1742,7 @@
       <person userid="pmonrealgonzalez" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Convert-UU" version="0.5201" srcmd5="fc0152964c1ca7e777477cdf21c35e9c" changesmd5="4f00b44c35c082fcbff3a35503c829c9" maxmtime="2011-04-15 07:28:00 UTC" release="3">
-    <failure repo="SLE_15_SP4" time="1649844100" srcmd5="fc0152964c1ca7e777477cdf21c35e9c"/>
-    <failure repo="SLE_15_SP3" time="1618573423" srcmd5="fc0152964c1ca7e777477cdf21c35e9c"/>
-  </package>
+  <package project="devel:languages:perl" name="perl-Convert-UU" version="0.520.100" srcmd5="658e5cecbb572662e297a06f8d5ec357" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Convert-UUlib" version="1.8" srcmd5="b7d18dc19a48e4875161160c2ab89ee6" changesmd5="" maxmtime="" release="48" verifymd5="82f8f10adad1015716f31133761c686d">
     <persons>
       <person userid="anicka" role="maintainer"/>
@@ -2067,7 +2058,7 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-DBIx-Class-BitField" version="0.13" srcmd5="093e23ce3f6b45fe457936eafbb3aabd" changesmd5="cf8fa8235fafa0d2d3c17a7509908c56" maxmtime="2015-01-21 12:45:46 UTC" release="1" verifymd5="3314e2277210e6c18b911185b8acb7fa"/>
-  <package project="devel:languages:perl" name="perl-DBIx-Class-Candy" version="0.005003" srcmd5="387c7999fba7a62d2aecf5fc7eb8ef4f" changesmd5="efaf4e7cdf3f5a33048eac1cd107c2bc" maxmtime="2017-07-15 15:12:59 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-DBIx-Class-Candy" version="0.5.3" srcmd5="425f3a4e58913034d99cc5534d0d7181" changesmd5="" maxmtime="" release="1" verifymd5="b350b1af6ffd923a5ed6a83573ddaf8c"/>
   <package project="devel:languages:perl" name="perl-DBIx-Class-Cursor-Cached" version="1.001004" srcmd5="87d3616cca748ca04b97689ada6d8b53" changesmd5="" maxmtime="" release="2">
     <persons>
       <person userid="coolo" role="maintainer"/>
@@ -2076,7 +2067,7 @@
   </package>
   <package project="devel:languages:perl" name="perl-DBIx-Class-DeploymentHandler" version="0.002233" srcmd5="b3cf9efded88ba3bcf048d873fb0f56a" changesmd5="" maxmtime="" release="29" verifymd5="926be35f7caa15715f6b9a856b6f3b10"/>
   <package project="devel:languages:perl" name="perl-DBIx-Class-DynamicDefault" version="0.04" srcmd5="70de1d904bad5aa981cfe3a93f1bac47" changesmd5="7b1466fc81870466d7db8338a04d0926" maxmtime="2017-10-18 08:51:17 UTC" release="6" verifymd5="ff878837cc69f41c5bdf0cead0671c93"/>
-  <package project="devel:languages:perl" name="perl-DBIx-Class-EncodedColumn" version="0.00020" srcmd5="67d4d46288e45c3fff94182c2c9cf89a" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-DBIx-Class-EncodedColumn" version="0.0.200" srcmd5="122b9b11b6e6fe32dccbb4ce5c63aca5" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-DBIx-Class-Fixtures" version="1.001039" srcmd5="937ab83f2befbd0dd7dfabf439cd600b" changesmd5="" maxmtime="" release="9" verifymd5="f7ef0be5b4e219d2eb636f5d60b8d271"/>
   <package project="devel:languages:perl" name="perl-DBIx-Class-Indexed" version="0.03" srcmd5="be3b0fec56f9275573adaa0939788312" changesmd5="71050683353bfd47155f2449a83655f7" maxmtime="2015-04-17 04:49:36 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-DBIx-Class-InflateColumn-FS" version="0.01007" srcmd5="13f6f260fddb0748b5b6589ece63e03b" changesmd5="" maxmtime="" release="6" verifymd5="4370f6b6e6a0794828338c2c198b182c"/>
@@ -2132,11 +2123,8 @@
   </package>
   <package project="devel:languages:perl" name="perl-DB_File" version="1.859.0" srcmd5="68e57b8c3140ac8c5cb83a79080aa8fb" changesmd5="" maxmtime="" release="2"/>
   <package project="devel:languages:perl" name="perl-DNS-ZoneParse" version="1.10" srcmd5="f79d30b2edc44dedfaf53a3f716a5bc5" changesmd5="370dc2f79a5a4310b71d1aee494dc3e7" maxmtime="2014-02-04 06:38:45 UTC" release="2" verifymd5="b6cb47a67f68bccc21e82b9fbcd146ca"/>
-  <package project="devel:languages:perl" name="perl-Daemon-Control" version="0.001010" srcmd5="c003f4781d75cf29bd47d5b73a79e67d" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-Daemon-Daemonize" version="0.0052" srcmd5="a98ada4a52aa1f4f534b98698d93d13b" changesmd5="3154b4009a5dcd7d2f8ba0d590bc62b9" maxmtime="2011-04-15 07:28:15 UTC" release="3">
-    <failure repo="SLE_15_SP4" time="1649867303" srcmd5="a98ada4a52aa1f4f534b98698d93d13b"/>
-    <failure repo="SLE_15_SP3" time="1618574328" srcmd5="a98ada4a52aa1f4f534b98698d93d13b"/>
-  </package>
+  <package project="devel:languages:perl" name="perl-Daemon-Control" version="0.1.10" srcmd5="a82d6a7ac677fbfcd127e79115e22c35" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Daemon-Daemonize" version="0.5.200" srcmd5="fdee5577ba9f228c1101dca9ca560293" changesmd5="" maxmtime="" release="1" verifymd5="50c0b826765d558a84ec72e9d4862091"/>
   <package project="devel:languages:perl" name="perl-Daemon-Generic" version="0.85" srcmd5="74497f3195605806656d36e9caca4c9e" changesmd5="c110de4e9d3c344828530cd5c8c91a57" maxmtime="2017-10-09 17:41:31 UTC" release="3" verifymd5="2c82c2acdf7facecb2b69a0b0c3c0962"/>
   <package project="devel:languages:perl" name="perl-Dancer" version="1.3521" srcmd5="330eeb266d9c56230fa332dc6e5d4649" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Dancer-Debug" version="0.03" srcmd5="408cea7f6ad7a180b1dae9881ba23f36" changesmd5="7e43a718fc2c0158083fbe57032fc757" maxmtime="2011-11-17 15:25:51 UTC" release="6" verifymd5="82b851d29c4f091ad152337464c23a7f">
@@ -2147,7 +2135,7 @@
   <package project="devel:languages:perl" name="perl-Dancer-Logger-Syslog" version="0.6" srcmd5="1413a7b5e9f3f8f4f8099f85d9d1852e" changesmd5="e6bfbc139f6761145c828d1ec684a785" maxmtime="2015-04-16 20:05:03 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-Dancer-Plugin-Database" version="2.13" srcmd5="bc77dfbeb8c5fca1ac6c5e30d735f338" changesmd5="43017dc218af849169572660bd57ed71" maxmtime="2016-08-18 08:05:39 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-Dancer-Plugin-Database-Core" version="0.20" srcmd5="642f579a613bd28d00d70d5e43d5606e" changesmd5="1345ac43905a114f93364c1c33831d39" maxmtime="2016-09-02 06:08:36 UTC" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dancer-Plugin-Email" version="1.0400" srcmd5="036f6a05ae04da1e855c9f4f564b1cbe" changesmd5="1c0af751ee7a5bfe879144745e1d7ec5" maxmtime="2015-04-16 20:17:16 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-Dancer-Plugin-Email" version="1.40.0" srcmd5="a07a2a95a96fd7c506c5df4013ce52a2" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Dancer-Plugin-FlashMessage" version="0.314" srcmd5="0d0e17799a094bc175dc775b51f8f90d" changesmd5="68b47e455b18f103a899aae0d99497f5" maxmtime="2015-04-17 07:17:30 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-Dancer-Plugin-Progress" version="0.001" srcmd5="fef1a1716265285b471c69743b93c75e" changesmd5="c69da23ba8dc55f2c157e8984b1f145d" maxmtime="2015-04-17 05:53:13 UTC" release="5"/>
   <package project="devel:languages:perl" name="perl-Dancer-Plugin-REST" version="0.11" srcmd5="091dda6d50409dd5a36c076b2982bf91" changesmd5="100f536add75f1cb77fa77b215e2cb40" maxmtime="2015-04-17 05:50:02 UTC" release="1"/>
@@ -2224,7 +2212,7 @@
       <person userid="computersalat" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Data-Diver" version="1.0101" srcmd5="524a798060dde1f9201f103439d5f4f2" changesmd5="302a2981efebc6b675247fa9c1b8e7a1" maxmtime="2013-07-03 09:39:08 UTC" release="1" verifymd5="af0fb52bb9d2c1760f50a13665779464">
+  <package project="devel:languages:perl" name="perl-Data-Diver" version="1.10.100" srcmd5="eaadb96e70ea34aa5c54ad29bfaf3b7d" changesmd5="" maxmtime="" release="1" verifymd5="71c0d96a76946899ed188cdc816a4b24">
     <failure repo="SLE_15_SP4" time="1649844101" srcmd5="af0fb52bb9d2c1760f50a13665779464"/>
     <failure repo="SLE_15_SP3" time="1618573423" srcmd5="af0fb52bb9d2c1760f50a13665779464"/>
   </package>
@@ -2279,7 +2267,7 @@
       <person userid="Kieltux" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Data-Inherited" version="1.100860" srcmd5="5d61ad49ac7d07d67529467d4d1c4197" changesmd5="af636080ef3f3f4a6fead3c2129c7fb6" maxmtime="2011-04-21 04:57:49 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Data-Inherited" version="1.100860" srcmd5="67af87fc1e50ec9b8822ab5afcc3f9b9" changesmd5="" maxmtime="" release="1" verifymd5="38683431c8eeef0dc22c385aa9b327bf">
     <failure repo="SLE_15_SP4" time="1649844101" srcmd5="5d61ad49ac7d07d67529467d4d1c4197"/>
     <failure repo="SLE_15_SP3" time="1618573423" srcmd5="5d61ad49ac7d07d67529467d4d1c4197"/>
   </package>
@@ -2717,7 +2705,7 @@
     <failure repo="SLE_15_SP4" time="1649844103" srcmd5="8b1e3d0f5997ca06ae9e3179b2473609"/>
     <failure repo="SLE_15_SP3" time="1618573424" srcmd5="8b1e3d0f5997ca06ae9e3179b2473609"/>
   </package>
-  <package project="devel:languages:perl" name="perl-Devel-ptkdb" version="1.1091" srcmd5="892992acf371d968b4610b5d14f5468e" changesmd5="70bcccc3a15b6f4422b674cefcfd994e" maxmtime="2015-10-27 04:53:35 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Devel-ptkdb" version="1.109.100" srcmd5="ddd8f446d928383a3c98326494287e1f" changesmd5="" maxmtime="" release="3" verifymd5="4a0120990adae09e0a44d603089e54ae">
     <persons>
       <person userid="M0ses" role="maintainer"/>
     </persons>
@@ -2941,7 +2929,7 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-App-Command-cover" version="1.101001" srcmd5="577aeda636ac2cf5f9d83123f9b2d5d8" changesmd5="53b6ebd79dbbc89bb5a26ae903ff8746" maxmtime="2013-12-17 17:25:13 UTC" release="1" verifymd5="95a0d836233e2392ed26785b7e6c485a"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-App-Command-cover" version="1.101.1" srcmd5="69082d90e16fd427056544ecd79d3315" changesmd5="" maxmtime="" release="1" verifymd5="c2a565b0db8d8a07f306d91680fed5aa"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-ApacheTest" version="0.04" srcmd5="c257470acd44bfb6460377bde0339fda" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="coolo" role="maintainer"/>
@@ -2961,13 +2949,13 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-AutoMetaResources" version="1.21" srcmd5="f55bb5e753be11514179a38eec64969c" changesmd5="1e5da7fa5c2108190486f478df9ba9a5" maxmtime="2015-05-08 09:04:07 UTC" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-AutoVersion-Relative" version="1.001001" srcmd5="22329d8f4b88b2e39ceb72e5830fb2b1" changesmd5="92d08e517ac1742c9fd4abcc7335bc10" maxmtime="2017-06-25 06:27:56 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-AutoVersion-Relative" version="1.1.1" srcmd5="759b28490b391cfdd7ba41ac76fdceca" changesmd5="" maxmtime="" release="1" verifymd5="7baaaeb46f3cfb3400a5093445e0e60b">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Bootstrap-lib" version="1.001002" srcmd5="3d003c3dde35a3c499da0aac3a2eab55" changesmd5="f1d4e6891542687bcd2ad701e5ce5b38" maxmtime="2017-06-25 06:28:10 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Bootstrap-lib" version="1.1.2" srcmd5="b53b2e6c7bf3a0f5b07cc16dd4faab95" changesmd5="" maxmtime="" release="1" verifymd5="4c95ca126c79a9df75458bfea2f5aa99">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
@@ -3012,7 +3000,7 @@
   </package>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Clean" version="0.07" srcmd5="7b9f9125c90808f2785e79a5a7190b63" changesmd5="2776e56f7f4cdd2e02f77eacb53f4c1b" maxmtime="2015-04-17 05:53:03 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Config-Git" version="0.92" srcmd5="1d65f9fd7f0009bc8da740306c1276ea" changesmd5="19f00a571a185a09efbe8a3a33aabff6" maxmtime="2015-04-17 11:53:05 UTC" release="1" verifymd5="3f93c1cf49bf0be088205e7f053cdbea"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-CopyFilesFromBuild" version="0.170880" srcmd5="0f1867fb50a1d319052634db2e57efc6" changesmd5="0b3a45912010f8a06264fd7c761b4b9a" maxmtime="2017-06-25 08:06:11 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-CopyFilesFromBuild" version="0.170.880" srcmd5="76485e55e911ab3a02bc01a5b589e536" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-CopyTo" version="0.11" srcmd5="cc1421c5b98e79ec6565a11cac7e0c78" changesmd5="0925e1c41e219d1d69743d2cc7424616" maxmtime="2011-11-17 15:30:18 UTC" release="4" verifymd5="511499baa3f9348eb9c62bb4ad6b6f91">
     <failure repo="SLE_15_SP4" time="1649902954" srcmd5="511499baa3f9348eb9c62bb4ad6b6f91"/>
     <failure repo="SLE_15_SP3" time="1618575431" srcmd5="511499baa3f9348eb9c62bb4ad6b6f91"/>
@@ -3028,7 +3016,7 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-DynamicPrereqs" version="0.040" srcmd5="a543f848bab83d37d183d0ebf3e5e90e" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-FatPacker" version="1.161631" srcmd5="0c41d5ffdd69106e790e1278841a69f3" changesmd5="21667b886a0ed78b6e800441b8719f71" maxmtime="2016-06-12 14:08:34 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-FatPacker" version="1.161.631" srcmd5="b6d0014fb72b4604e817a13b4279dbed" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
@@ -3057,9 +3045,7 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-HasVersionTests" version="1.101420" srcmd5="5f582082d586d80503df81e3555e7336" changesmd5="b9b13f042b4074b3d1ddc328cb87807c" maxmtime="2011-11-17 15:30:36 UTC" release="4" verifymd5="1fb40c2d0e876d803c394b3f4e446ca5">
-    <failure repo="SLE_15_SP4" time="1649902954" srcmd5="1fb40c2d0e876d803c394b3f4e446ca5"/>
-    <failure repo="SLE_15_SP3" time="1618575431" srcmd5="1fb40c2d0e876d803c394b3f4e446ca5"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-HasVersionTests" version="1.101.420" srcmd5="9dfa18f63a0ac14c96737f7d1406a80a" changesmd5="" maxmtime="" release="1" verifymd5="1e6675831abb00bef3221a9d55436e62">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
@@ -3073,7 +3059,7 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-InstallGuide" version="1.200014" srcmd5="41b31cfd0643e48adda5cc7bfa31eadc" changesmd5="" maxmtime="" release="1">
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-InstallGuide" version="1.200.14" srcmd5="1099eb241d891c7a09f17958cf8ea667" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
@@ -3110,10 +3096,7 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-MetaResourcesFromGit" version="1.103620" srcmd5="f56e737e8f8b97376d9c0b82e5d4cb5c" changesmd5="4f41b7077fe15c93d3cf00439f6f10ee" maxmtime="2011-04-15 07:28:42 UTC" release="3">
-    <failure repo="SLE_15_SP4" time="1649902955" srcmd5="f56e737e8f8b97376d9c0b82e5d4cb5c"/>
-    <failure repo="SLE_15_SP3" time="1618575431" srcmd5="f56e737e8f8b97376d9c0b82e5d4cb5c"/>
-  </package>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-MetaResourcesFromGit" version="1.103.620" srcmd5="5675f858b41ada881144f436a960a620" changesmd5="" maxmtime="" release="1" verifymd5="f6e9bef7c1959c698fb09a1dc18b0238"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-MinimumPerl" version="1.006" srcmd5="0b1ae718888bd16ce69f2db915d21ab7" changesmd5="0196c14bf380ba386c11ce3ef0fe4808" maxmtime="2015-04-17 05:52:43 UTC" release="1">
     <failure repo="pure_factory" time="1498054457" srcmd5="0b1ae718888bd16ce69f2db915d21ab7"/>
     <persons>
@@ -3181,15 +3164,13 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-ReadmeMarkdownFromPod" version="0.141140" srcmd5="ca002adaf424ef3ca5d52937cb997cd0" changesmd5="d8b745e1be8f88b8c188e89896586fd4" maxmtime="2015-04-17 17:45:44 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-ReadmeMarkdownFromPod" version="0.141.140" srcmd5="405308a15dd3f160d6c7d22c5832cd56" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-ReportVersions" version="1.110730" srcmd5="8d6c18232e0d836bdd939d2e801360d6" changesmd5="615ad9b2b0e2637cbe45bc962bdd6acd" maxmtime="2011-04-03 14:57:35 UTC" release="1">
-    <failure repo="SLE_15_SP4" time="1649902955" srcmd5="8d6c18232e0d836bdd939d2e801360d6"/>
-    <failure repo="SLE_15_SP3" time="1618575432" srcmd5="8d6c18232e0d836bdd939d2e801360d6"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-ReportVersions" version="1.110.730" srcmd5="649ff1c290ad324563a5b9e2042d7de1" changesmd5="" maxmtime="" release="1" verifymd5="60d74af1974b69a5c97c59b944186636">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
@@ -3215,15 +3196,13 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Signature" version="1.100930" srcmd5="8963f53bc427e9692bc14a46b3d5ba26" changesmd5="d3a03b6bee406ebc1280183988128853" maxmtime="2011-11-17 15:31:15 UTC" release="4" verifymd5="bcfd734465be04b13e66013894b08c59">
-    <failure repo="SLE_15_SP4" time="1649902955" srcmd5="bcfd734465be04b13e66013894b08c59"/>
-    <failure repo="SLE_15_SP3" time="1618575432" srcmd5="bcfd734465be04b13e66013894b08c59"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Signature" version="1.100.930" srcmd5="a4e811f2b17108b037a9b03620a570d9" changesmd5="" maxmtime="" release="1" verifymd5="72818244c761382dcb19c9385aa0d5ee">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-TaskWeaver" version="0.101629" srcmd5="e4a040a85e574d8ed4bebd95e598ea2d" changesmd5="" maxmtime="" release="1">
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-TaskWeaver" version="0.101.629" srcmd5="92e808d026ef3003fd6f4a0faa012c86" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
@@ -3233,13 +3212,13 @@
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-Compile" version="2.058" srcmd5="6c65bd20f315336277e2d919643e8501" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-EOL" version="0.19" srcmd5="e49a5dbf747fcca3c22c1344d7cfd71b" changesmd5="3de6a9ee832c4eaafdc31e33ad38eac0" maxmtime="2017-06-25 07:34:10 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-Kwalitee" version="2.12" srcmd5="8267b92b97c262fcb369b7fe8e170c12" changesmd5="239119e2f4be027103fab35fe31bd915" maxmtime="2015-10-04 20:51:32 UTC" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-MinimumVersion" version="2.000010" srcmd5="f0c96fe265185f2bf30426941a2e5e14" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-MinimumVersion" version="2.0.10" srcmd5="b06aff16c8409b4a4be56a562abb7384" changesmd5="" maxmtime="" release="1" verifymd5="d465ccdd7789604333a6d46cd2947f0c"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-NoTabs" version="0.15" srcmd5="d797453b7a0170e5ae28219c17b46db6" changesmd5="4cce0bdb4bdfc2396f234a8e3e25e670" maxmtime="2015-06-10 10:39:29 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-Perl-Critic" version="3.001" srcmd5="4f7375a8281af39598561a562e91d71e" changesmd5="4a27b867def3d90f3e8bedc4109484d6" maxmtime="2017-06-25 06:58:53 UTC" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-PodSpelling" version="2.007005" srcmd5="3e50614efb989dd1cc58a1fdea024e2e" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-Portability" version="2.001001" srcmd5="d70fe1fa6e3eda60562b5e0dbdf35012" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-PodSpelling" version="2.7.5" srcmd5="076994b8033c745b0593f8d5e9433517" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-Portability" version="2.1.1" srcmd5="9d7f3cc5e5a45971bf7dc03c333c4529" changesmd5="" maxmtime="" release="1" verifymd5="6d85404bd213f352935b99beca33431c"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-ReportPrereqs" version="0.029" srcmd5="39fdcfa2c7570d8e04f5d64b6696ce85" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-Synopsis" version="2.000007" srcmd5="f6b4d00e79d5290f8465124ada4a21e0" changesmd5="7b0ca987c201a4fa3f1f5481c9ecd539" maxmtime="2016-06-12 14:09:59 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-Synopsis" version="2.0.7" srcmd5="850e5dad83cd60d5503290b295ad87e7" changesmd5="" maxmtime="" release="1" verifymd5="dd53dda6ff1ae2b09eee966b922737b3"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Test-Version" version="1.09" srcmd5="ce9b022a28f0080ce1850488ee5f7233" changesmd5="25c4920cf87906ea23a766901a81932f" maxmtime="2016-05-25 07:50:35 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Plugin-Twitter" version="0.026" srcmd5="d5ea784424a7ad94f669751ae085b64f" changesmd5="22b9d18fdce392e2b19018dc26414727" maxmtime="2015-04-20 06:48:58 UTC" release="1">
     <persons>
@@ -3257,10 +3236,10 @@
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Role-FileWatcher" version="0.006" srcmd5="ce90f69461ba7cb2b96379084c90ceb1" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Role-ModuleMetadata" version="0.006" srcmd5="ecba72901dbf7164930cdc79ac407c75" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Dist-Zilla-Role-PluginBundle-PluginRemover" version="0.105" srcmd5="004b41658322d47087446aa7c7de7299" changesmd5="8af30d5bc5d538c2a2516020ead5b0c9" maxmtime="2017-10-10 05:08:05 UTC" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Role-Tempdir" version="1.001003" srcmd5="8ba23c5359dde63c897b62ff97205cbe" changesmd5="4bb23ae9c17cad8a8d939256e3d55122" maxmtime="2017-06-25 06:46:26 UTC" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Util-ConfigDumper" version="0.003009" srcmd5="85947760cd92bc47e98f7ec6f822830c" changesmd5="197012eb5c819239fc90b5117bcb4e99" maxmtime="2017-06-25 06:46:09 UTC" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Util-EmulatePhase" version="1.001002" srcmd5="3b19c53d35ed1799453a6479faccc5e3" changesmd5="1c526f9c402b4894f86f1a4884f4ef14" maxmtime="2017-06-25 06:44:03 UTC" release="1"/>
-  <package project="devel:languages:perl" name="perl-Dist-Zilla-Util-Test-KENTNL" version="1.005014" srcmd5="ea045dbc6376764cef957ea6fea9b395" changesmd5="6fe857d90a530ea90bbff4b854d5761b" maxmtime="2017-06-25 06:43:07 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Role-Tempdir" version="1.1.3" srcmd5="a5b1d4bc885442ca88fdb5dd7f3939e7" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Util-ConfigDumper" version="0.3.9" srcmd5="77eef4f487950ae47730d072eef18fa4" changesmd5="" maxmtime="" release="1" verifymd5="1991ae0f170dc7a0f402479d3e91d8c5"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Util-EmulatePhase" version="1.1.2" srcmd5="4b3a5c9986850d9f8641fbd45354a5fc" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Dist-Zilla-Util-Test-KENTNL" version="1.5.14" srcmd5="b6290e3e145e953c92bf9cd2b34c7af6" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
@@ -3378,7 +3357,7 @@
     <failure repo="SLE_15_SP3" time="1618574328" srcmd5="d77ded9d33b93e7ba30b82718b8a22b4"/>
   </package>
   <package project="devel:languages:perl" name="perl-Encode" version="3.210.0" srcmd5="2032d045bea95b6d0f8d8afce6243991" changesmd5="" maxmtime="" release="50" verifymd5="6b7de067c24c68dabd2e237fd907b9de"/>
-  <package project="devel:languages:perl" name="perl-Encode-Base32-Crockford" version="2.112991" srcmd5="d949e91f4bba92e0b43f64655026406f" changesmd5="99a7519545d61a487c063743790ae9b5" maxmtime="2015-04-15 07:38:16 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-Encode-Base32-Crockford" version="2.112.991" srcmd5="7a4eb395e48526a68e572f3f1398117a" changesmd5="" maxmtime="" release="1" verifymd5="c69abf45a8c6c7bed37798afbbe42838"/>
   <package project="devel:languages:perl" name="perl-Encode-Base58" version="0.01" srcmd5="cccf9482e8af2046f6ced6d6709f30f8" changesmd5="" maxmtime="" release="4"/>
   <package project="devel:languages:perl" name="perl-Encode-Detect" version="1.01" srcmd5="c360113a1bc07abd4f80d2f8fd45a105" changesmd5="c37cc118b5ab965d94baafaf53f670e2" maxmtime="2013-04-02 10:36:21 UTC" release="35" verifymd5="1d52469a50d65bc3b7aa88e7763bb952">
     <persons>
@@ -3460,10 +3439,7 @@
     <failure repo="SLE_15_SP4" time="1649844105" srcmd5="217c36aabb83e2d3e223af146d6daa20"/>
     <failure repo="SLE_15_SP3" time="1618573425" srcmd5="217c36aabb83e2d3e223af146d6daa20"/>
   </package>
-  <package project="devel:languages:perl" name="perl-Exception-Warning" version="0.0401" srcmd5="56ee5c71baa406e98e6c007369329bc3" changesmd5="1770778100f10f4f0c1fc6df2556e07d" maxmtime="2011-04-15 07:28:54 UTC" release="3">
-    <failure repo="SLE_15_SP4" time="1649867945" srcmd5="56ee5c71baa406e98e6c007369329bc3"/>
-    <failure repo="SLE_15_SP3" time="1618574438" srcmd5="56ee5c71baa406e98e6c007369329bc3"/>
-  </package>
+  <package project="devel:languages:perl" name="perl-Exception-Warning" version="0.40.100" srcmd5="997556b59103c52eee9d87ad647dcb07" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Expect" version="1.35" srcmd5="4397526a83599844126d1ac2b83b5b55" changesmd5="" maxmtime="" release="127" verifymd5="3f0ebc681282774d483dd56d8879e472">
     <persons>
       <person userid="mcalmer" role="maintainer"/>
@@ -3794,7 +3770,7 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-File-ShareDir-PathClass" version="1.112440" srcmd5="8d87941f0d9ac6c5f937b12f1dbfca17" changesmd5="22eac42a31c16b967604f98a66667df6" maxmtime="2015-04-15 09:43:30 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-File-ShareDir-PathClass" version="1.112.440" srcmd5="9dd6b451002f039c0012943d038ca026" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-File-ShareDir-ProjectDistDir" version="1.000009" srcmd5="8b4327df4a69f2fe906c67b7442ee3b1" changesmd5="b51cd47a31e27280bce1af30acec9585" maxmtime="2017-03-13 14:33:26 UTC" release="18" verifymd5="712061e9a5080a059c606ac19d57c1b2"/>
   <package project="devel:languages:perl" name="perl-File-ShouldUpdate" version="0.2.1" srcmd5="daf937d2504dda63a201d0b6bd428a98" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-File-Slurp" version="9999.32" srcmd5="255a636d1fda1f9a5a104bf34dc5863d" changesmd5="" maxmtime="" release="43" verifymd5="9f81f3b7aabd6f2ce1d4b1f483459bc0">
@@ -4137,7 +4113,6 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-Glib" version="1.3294" srcmd5="b0aceba735193556ce33fd2d4a8d3205" changesmd5="" maxmtime="" release="71" verifymd5="a2668b1ffc73f7062485cf67a33a2c04">
-    <failure repo="SLE_15_SP3" time="1710151003" srcmd5="a2668b1ffc73f7062485cf67a33a2c04"/>
     <persons>
       <person userid="pmonrealgonzalez" role="maintainer"/>
       <person userid="tinita" role="maintainer"/>
@@ -4447,7 +4422,7 @@
       <person userid="dlovasko" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-HTML-Template-Pro" version="0.9524" srcmd5="94dccb55748d7c442d0b8ef1b56d53d8" changesmd5="" maxmtime="" release="1">
+  <package project="devel:languages:perl" name="perl-HTML-Template-Pro" version="0.952.400" srcmd5="593b980d8cd2665e8926e42e0390de0a" changesmd5="" maxmtime="" release="1" verifymd5="91fdde21643c413c3be78ef0f60b7901">
     <persons>
       <person userid="lrupp" role="maintainer"/>
       <person userid="lrupp" role="bugowner"/>
@@ -4580,7 +4555,7 @@
   </package>
   <package project="devel:languages:perl" name="perl-HTTP-Tiny-Paranoid" version="0.07" srcmd5="0c05cd77054667f62995ba7c3a9986e4" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-HTTP-Tinyish" version="0.18" srcmd5="df73ec97d9d3977ac6f4356df9effcb0" changesmd5="" maxmtime="" release="5" verifymd5="a1c71aa2a75682d86556af0d91681ae5"/>
-  <package project="devel:languages:perl" name="perl-HTTP-XSCookies" version="0.000021" srcmd5="68c710080eda57ea68b7ab0c3deb27e4" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-HTTP-XSCookies" version="0.0.21" srcmd5="db81888b0adb948ea6d93ba3a6a56c55" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-HTTPS-Daemon" version="1.04" srcmd5="4dfee9284e8fe9802ebfd5ae9251efe6" changesmd5="fda50106814440754c1d8bb816d304ba" maxmtime="2010-12-10 18:05:11 UTC" release="80" verifymd5="d6ecc6b98700e5f6b41aa8ca5f671337">
     <persons>
       <person userid="pmonrealgonzalez" role="maintainer"/>
@@ -4621,7 +4596,7 @@
       <person userid="rjschwei" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-ICal-Format-Natural" version="1.121310" srcmd5="0df07ca7d20110c0d93e5d732a68bfcc" changesmd5="c31920b35531c8e39cc708fc58834b63" maxmtime="2015-04-14 18:44:06 UTC" release="1" verifymd5="1ce0a0694a2b6bc802abb8ce59b3bcd5"/>
+  <package project="devel:languages:perl" name="perl-ICal-Format-Natural" version="1.121.310" srcmd5="343cdcb20e14059a12339fc3d4724f4a" changesmd5="" maxmtime="" release="1" verifymd5="457e122577bad316dba3b75661d7e9c7"/>
   <package project="devel:languages:perl" name="perl-ICal-QuickAdd" version="1.00" srcmd5="0ec1019f9500d6e8b2712d1aa98f508c" changesmd5="7d5382a2a4978d192820a82eb84f33fc" maxmtime="2011-12-16 07:09:14 UTC" release="2" verifymd5="7201a56aac521d7348062ab9ef8eacd3"/>
   <package project="devel:languages:perl" name="perl-IO" version="1.550.0" srcmd5="6e1c590877f97a248436b36d2314e5dc" changesmd5="" maxmtime="" release="2" verifymd5="8bcea49c4987bdaccadee737812cb1ae">
     <persons>
@@ -4770,7 +4745,7 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-IPC-Exe" version="2.002001" srcmd5="1b923d862e0607024ee6a0702936d273" changesmd5="ec6a5b7d0bfe4c01df3e60abcf7a5680" maxmtime="2015-04-14 06:02:45 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-IPC-Exe" version="2.2.1" srcmd5="51c6a575aec8a4f3b3ab04aec4e78e5d" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-IPC-Run" version="20231003.0.0" srcmd5="c8c4e52ccbb9c7f13159887d24361a76" changesmd5="" maxmtime="" release="51" verifymd5="c8492200c0a6babd10587fa74cd194d6">
     <persons>
       <person userid="anicka" role="maintainer"/>
@@ -5110,7 +5085,7 @@
       <person userid="pmonrealgonzalez" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Linux-Systemd" version="1.201600" srcmd5="20bb7e67bc6ead1040218ca19dc0189b" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Linux-Systemd" version="1.201.600" srcmd5="149f6e2426f19a2bc4413c1ce1fcff16" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-List-AllUtils" version="0.19" srcmd5="844eb88d2fb3deee902c1c251b179f1a" changesmd5="" maxmtime="" release="33" verifymd5="bf097ba93e930970756b99f2b33c857e">
     <persons>
       <person userid="WernerFink" role="maintainer"/>
@@ -5182,7 +5157,7 @@
   <package project="devel:languages:perl" name="perl-Log-Any-Adapter-Dispatch" version="0.08" srcmd5="e9c081a5338ec0572ca413700b3804f5" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Log-Any-Adapter-Log4perl" version="0.09" srcmd5="5aba61f095aa4bb208cd9ea8265f7f22" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Log-Any-Adapter-Screen" version="0.141.0" srcmd5="999db7079a75db707c1986a51c3ff756" changesmd5="" maxmtime="" release="2"/>
-  <package project="devel:languages:perl" name="perl-Log-Any-Adapter-TAP" version="0.003003" srcmd5="3d48c085dfd778bc9f5b0e6fbe25b8e7" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Log-Any-Adapter-TAP" version="0.3.3" srcmd5="30ff92073f358559bfb87169ce609f4e" changesmd5="" maxmtime="" release="1" verifymd5="a5550a561c3e909a2f2de075b0b0f4f0"/>
   <package project="devel:languages:perl" name="perl-Log-Any-App" version="0.540" srcmd5="abc692675b17e22410e103053920e571" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Log-Any-IfLOG" version="0.090" srcmd5="7d560f0e42f47d490bab991a8233d163" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Log-Contextual" version="0.008001" srcmd5="0c73b4f1ff4130569de78b49fa08fab2" changesmd5="" maxmtime="" release="26" verifymd5="09bcaf2cc037333e5629436d49700f35"/>
@@ -5199,7 +5174,7 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Log-Dispatch-Configurator-Any" version="1.122640" srcmd5="f979ca3ec4774e8876267111e442a540" changesmd5="a72bf14707008f09a458368b19738974" maxmtime="2015-04-15 05:27:13 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-Log-Dispatch-Configurator-Any" version="1.122.640" srcmd5="aea2df7536abdb504926f3a8ae812f1d" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Log-Dispatch-Dir" version="0.160" srcmd5="37f0fb4493e9450389193d36e1381f49" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Log-Dispatch-FileRotate" version="1.38" srcmd5="67ffcf7dc973c30f3b2c6a3360e2def6" changesmd5="" maxmtime="" release="61" verifymd5="b04e1b5f7653faa1b4ded8dab9344791"/>
   <package project="devel:languages:perl" name="perl-Log-Dispatch-FileWriteRotate" version="0.062" srcmd5="8acf00a4362304870e4d1391906d0c21" changesmd5="" maxmtime="" release="1"/>
@@ -5406,7 +5381,7 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-Mail-Message" version="3.15.0" srcmd5="2771b514d8379f234720f204e6e8aa15" changesmd5="" maxmtime="" release="15"/>
-  <package project="devel:languages:perl" name="perl-Mail-Milter-Authentication" version="3.20240205" srcmd5="018bd4694b5b9d7b2a1985069395a818" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Mail-Milter-Authentication" version="3.202.402.50" srcmd5="9bd65c14d63e17df6f9f03d9dd0d42ee" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Mail-POP3Client" version="2.21" srcmd5="b979c254af0550a718f47bc208034dc1" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Mail-RFC822-Address" version="0.3" srcmd5="939f2e6783faf2ee332a5e7441a326e5" changesmd5="a690cd6c633b22267b7d11dc19e0493b" maxmtime="2010-12-03 14:41:33 UTC" release="5">
     <failure repo="SLE_15_SP4" time="1649844112" srcmd5="939f2e6783faf2ee332a5e7441a326e5"/>
@@ -5474,14 +5449,14 @@
   </package>
   <package project="devel:languages:perl" name="perl-Math-Base-Convert" version="0.11" srcmd5="8d1c2f0114d45b43dd11c411931bc8ae" changesmd5="" maxmtime="" release="11" verifymd5="4a1c445eb31a7b934f362b3e4d2db789"/>
   <package project="devel:languages:perl" name="perl-Math-BigInt" version="2.3.2" srcmd5="1923061f344e3719824a967da5e36a7d" changesmd5="" maxmtime="" release="107" verifymd5="822ccb2589c2e361c19a00fc9d19e7bd"/>
-  <package project="devel:languages:perl" name="perl-Math-BigInt-FastCalc" version="0.5016" srcmd5="54a09e4b56457c383d2708c8591d97db" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Math-BigInt-FastCalc" version="0.501.600" srcmd5="10036e65c45f7e9318c212d555d70437" changesmd5="" maxmtime="" release="1" verifymd5="b2d8c06f80d38a24b8b5aefc5a119981"/>
   <package project="devel:languages:perl" name="perl-Math-BigInt-GMP" version="1.7000" srcmd5="3200ad34687da708bd86120a4f61e17b" changesmd5="" maxmtime="" release="68" verifymd5="ae0d10796db31f14760b15a7c8511de9">
     <persons>
       <person userid="jimfunk" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Math-BigInt-Pari" version="1.3013" srcmd5="5e7e76edcb52907e7de37b7f7ebea408" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-Math-BigRat" version="0.2624" srcmd5="4195a62e622d972e18de40f44f88b0cd" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Math-BigInt-Pari" version="1.301.300" srcmd5="f062576fc1e8ee370d8fadfbe2837b2d" changesmd5="" maxmtime="" release="1" verifymd5="c60733b43e17f6e56b19bfb3e05fc2f3"/>
+  <package project="devel:languages:perl" name="perl-Math-BigRat" version="0.262.400" srcmd5="791f741008cb903c8d1f8090c0738d15" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Math-Calc-Units" version="1.07" srcmd5="2a915e87e7a76c6a90cefae831ac5e99" changesmd5="12d4b146c1dbba8bfad42a4a8d636248" maxmtime="2013-01-17 14:17:39 UTC" release="13" verifymd5="99fcd896cc466326efec4b135c91743e">
     <persons>
       <person userid="anicka" role="maintainer"/>
@@ -5561,7 +5536,7 @@
   </package>
   <package project="devel:languages:perl" name="perl-MediaWiki-API" version="0.52" srcmd5="430f099a473f87cd6f04fe6a19b456a3" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-MediaWiki-Bot" version="5.007000" srcmd5="8319262d023a3964297ccdf2dbbf7ce3" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-MediaWiki-Bot-Plugin-Admin" version="3.004000" srcmd5="67a8666040895d0e5a709c5bcb7e938d" changesmd5="8297422938dc390c51d12da3003d61ec" maxmtime="2015-04-19 07:28:12 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-MediaWiki-Bot-Plugin-Admin" version="3.4.0" srcmd5="2c74f1cbfc5d08b2c2e30556b52b9563" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-MediaWiki-Bot-Plugin-Steward" version="0.0003" srcmd5="2344d9ef8164603eddc205cec23018e5" changesmd5="ece2c0ccec024193effd234c2dbb126f" maxmtime="2011-11-17 15:39:45 UTC" release="7" verifymd5="022bcad290e2138177b762dc885b9942">
     <failure repo="SLE_15_SP4" time="1649905954" srcmd5="022bcad290e2138177b762dc885b9942"/>
     <failure repo="SLE_15_SP3" time="1618574955" srcmd5="022bcad290e2138177b762dc885b9942"/>
@@ -6040,7 +6015,7 @@
   <package project="devel:languages:perl" name="perl-MooseX-SimpleConfig" version="0.11" srcmd5="ee68260c0e5e6849bb53b519ea42c710" changesmd5="1b7707754d8db48e02db99812ebc080f" maxmtime="2015-04-15 14:26:07 UTC" release="21" verifymd5="c4de4d0e97c1e0eb07f723da9830fc79"/>
   <package project="devel:languages:perl" name="perl-MooseX-Singleton" version="0.30" srcmd5="90bd05957c77009d4fb192733e313224" changesmd5="30d39dfe999918307e7f31900ca9341b" maxmtime="2016-11-28 14:08:09 UTC" release="12" verifymd5="173b012ac5be050d31d6b277b172802a"/>
   <package project="devel:languages:perl" name="perl-MooseX-Storage" version="0.53" srcmd5="52f381b184df0a6e412ff77bb1d9fef2" changesmd5="" maxmtime="" release="18" verifymd5="20d11098feeaf523dd928293cbe67d25"/>
-  <package project="devel:languages:perl" name="perl-MooseX-Storage-Format-JSONpm" version="0.093094" srcmd5="468cb1c1c9c1fbe8a0bdba99c7802732" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-MooseX-Storage-Format-JSONpm" version="0.93.94" srcmd5="932b6d401445d639b5c7412920c94c60" changesmd5="" maxmtime="" release="1" verifymd5="15a276d87b9f6150a60463d2dfec96a3"/>
   <package project="devel:languages:perl" name="perl-MooseX-StrictConstructor" version="0.21" srcmd5="66404e12ed72ce7815e2207babb00b2d" changesmd5="520fe027bc6052f2546a0e2d2c2bd5c0" maxmtime="2017-02-15 09:06:56 UTC" release="14" verifymd5="b465809ae8815417cf241e4813c0a338"/>
   <package project="devel:languages:perl" name="perl-MooseX-TraitFor-Meta-Class-BetterAnonClassNames" version="0.002003" srcmd5="2207951cfb554c082493ee5ef242e35f" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-MooseX-Traits" version="0.13" srcmd5="07690a6b9b3de498a440d9b3853691f7" changesmd5="b7bd2e5f5d86052e385c5f160a04e1cc" maxmtime="2015-08-28 06:26:12 UTC" release="19" verifymd5="e955d17c9b01c54f66d15bed44fdbb16"/>
@@ -6291,7 +6266,7 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-Net-LibIDN2" version="1.02" srcmd5="63961d600cece662f1dd73b462a404c7" changesmd5="" maxmtime="" release="3"/>
-  <package project="devel:languages:perl" name="perl-Net-MQTT" version="1.163170" srcmd5="676c62266dab015e740667349bcdbd4c" changesmd5="" maxmtime="" release="2"/>
+  <package project="devel:languages:perl" name="perl-Net-MQTT" version="1.163.170" srcmd5="105127492db3ca23a774f41b7b29340f" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Net-MQTT-Simple" version="1.290.0" srcmd5="05363362397eef50bf33d81ee60d92f5" changesmd5="" maxmtime="" release="2"/>
   <package project="devel:languages:perl" name="perl-Net-MySQL" version="0.11" srcmd5="3bce3668e3ed79f650674217bb84e5f3" changesmd5="e8177f463909db06eddde374e81618c9" maxmtime="2011-11-04 00:18:39 UTC" release="1" verifymd5="96abaf321106e347ad6ca3d1da96fc07">
     <failure repo="SLE_15_SP4" time="1649844687" srcmd5="96abaf321106e347ad6ca3d1da96fc07"/>
@@ -6408,7 +6383,7 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-Net-Sieve" version="0.12" srcmd5="244a8035df70b9a6752a8ac795988309" changesmd5="" maxmtime="" release="3"/>
-  <package project="devel:languages:perl" name="perl-Net-Stomp" version="0.620.0" srcmd5="125b65dc94bb5a8ea3baaecfaaa29d52" changesmd5="" maxmtime="" release="2" verifymd5="7adff6b69da096e51b87060b0046877a"/>
+  <package project="devel:languages:perl" name="perl-Net-Stomp" version="0.620.0" srcmd5="ee7eb04fc84b90cc33ac1ca430d089e9" changesmd5="" maxmtime="" release="3"/>
   <package project="devel:languages:perl" name="perl-Net-TFTP" version="0.1901" srcmd5="cb1b10ae751a8985dca57d9b940cd041" changesmd5="4ceaad52ec3cf2e8462200362b6e5b9d" maxmtime="2017-03-28 13:20:46 UTC" release="5" verifymd5="04a119c17590c32c4a20fa2051c30630"/>
   <package project="devel:languages:perl" name="perl-Net-Telnet" version="3.05" srcmd5="11c561944dcfcca814ff9879722307eb" changesmd5="" maxmtime="" release="676" verifymd5="548771a1fec36c72dadf500634cd616b">
     <persons>
@@ -6516,7 +6491,7 @@
   <package project="devel:languages:perl" name="perl-Number-Format-Metric" version="0.602" srcmd5="015ff7e81860fd901a9333676b9b1753" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Number-Misc" version="1.2" srcmd5="099ed4d09d93ce872cb5e051cde4154e" changesmd5="708410386feb609acfbe7f7f75852c14" maxmtime="2015-04-17 12:01:02 UTC" release="1" verifymd5="e254d3f9a23e8a34208e286126a416c3"/>
   <package project="devel:languages:perl" name="perl-Number-Phone" version="3.9002" srcmd5="1cfc623aff33dbfeaec30e8a72b0dbe4" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-Number-Phone-JP" version="0.20190521" srcmd5="481ebf1670cc2f4e47c2e89b1c777967" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Number-Phone-JP" version="0.201.905.210" srcmd5="72b4a9cb7629df1c7d582cb144f18d29" changesmd5="" maxmtime="" release="1" verifymd5="b30741082babdfa0a97dbe1cc563d42c"/>
   <package project="devel:languages:perl" name="perl-Number-Tolerant" version="1.710" srcmd5="02a267189b99fadf88da95781764b574" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Number-WithError" version="1.01" srcmd5="67dede90b9422f8bace801fff3ebbc2b" changesmd5="" maxmtime="" release="8" verifymd5="5f1bfdce3e739beb5bf8635850e2f9c3"/>
   <package project="devel:languages:perl" name="perl-OLE-Storage_Lite" version="0.22" srcmd5="7552d9992f9e17a3768316306e94e8df" changesmd5="" maxmtime="" release="32" verifymd5="f907b99469ad6eb4e697737070aa512f"/>
@@ -6575,7 +6550,7 @@
       <person userid="bmwiedemann" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Ouch" version="0.0501" srcmd5="920d998798f055dec048e7dce456ed7e" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Ouch" version="0.50.100" srcmd5="7cc9f6935d183406ad02232e867f41fb" changesmd5="" maxmtime="" release="1" verifymd5="a760cce2926a83494429851edc78cddc"/>
   <package project="devel:languages:perl" name="perl-Overload-FileCheck" version="0.013" srcmd5="158ab505dd956c6dfec55f05817573d9" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-PAR" version="1.19.0" srcmd5="c8316eda069fd3f67f94884b388c6397" changesmd5="" maxmtime="" release="38" verifymd5="86b6e5bf6dc68c1525d6f3d0aecff962">
     <persons>
@@ -6627,7 +6602,7 @@
   <package project="devel:languages:perl" name="perl-PDL" version="2.081" srcmd5="bfac6b108338c554a73d18471874c92e" changesmd5="" maxmtime="" release="1">
     <failure repo="openSUSE_Tumbleweed" time="1661341820" srcmd5="a7d2d565cccbb53a65d78e0f55ac154a"/>
   </package>
-  <package project="devel:languages:perl" name="perl-PERLANCAR-Module-List" version="0.004005" srcmd5="f857e707199a6fd931e1ca5bbcda2290" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-PERLANCAR-Module-List" version="0.4.5" srcmd5="46f299c38d13416da77e4cb4a9fc8101" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-PHP-Serialization" version="0.34" srcmd5="e4e52b4e1fa66b28dde325e8f279b3f1" changesmd5="30236fa6d5b311c10a44a2e082c12cb8" maxmtime="2011-11-11 09:05:26 UTC" release="17" verifymd5="7aa6afb7f336821f482bbeb9b9bf8a4d"/>
   <package project="devel:languages:perl" name="perl-POD2-Base" version="0.043" srcmd5="ea6390dc2e535164f5c6854e818fbbec" changesmd5="22f09d14d5db4a39d33bf8cec1edeaed" maxmtime="2010-12-27 12:26:01 UTC" release="1">
     <failure repo="SLE_15_SP4" time="1649844115" srcmd5="ea6390dc2e535164f5c6854e818fbbec"/>
@@ -6654,13 +6629,13 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-POE-Component-Generic" version="0.1403" srcmd5="e4c692c9958ef4cded84b0b26fab5eb0" changesmd5="578cb217fc8b99a5853b9edcd2c3e5df" maxmtime="2015-04-13 17:02:58 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-POE-Component-Generic" version="0.140.300" srcmd5="cfc282c91751f215c9472d9adbcbc227" changesmd5="" maxmtime="" release="1" verifymd5="5f48376ddfb2c28b5fe076784af40304"/>
   <package project="devel:languages:perl" name="perl-POE-Component-IRC" version="6.93" srcmd5="e5c814fbcccfeffd89b6a23c200c721b" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="dirkmueller" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-POE-Component-IRC-Plugin-BaseWrap" version="1.001001" srcmd5="d26db5215293698b65f79dffe378a7b9" changesmd5="e47a6b0d19a25355251cf0b46b21d654" maxmtime="2015-04-16 18:14:28 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-POE-Component-IRC-Plugin-BaseWrap" version="1.1.1" srcmd5="bc46bf79b0a1b71de3b0b8f73d0b1c1e" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-POE-Component-Pluggable" version="1.28" srcmd5="e57304f1b5001860b36a7924c1da75b0" changesmd5="f3ccc0afe50f95e169ab3d24fd754f5c" maxmtime="2017-02-28 14:16:47 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-POE-Component-Server-Chargen" version="1.16" srcmd5="68dae596161c4f3a5c9f2272882dfa52" changesmd5="37157c8e80f44c74e07fc58b7325b821" maxmtime="2017-02-28 14:18:48 UTC" release="1">
     <persons>
@@ -6954,7 +6929,7 @@
     <failure repo="SLE_15_SP4" time="1649844116" srcmd5="7d1b1344bd37ca30637d59194da4a764"/>
     <failure repo="SLE_15_SP3" time="1618573429" srcmd5="7d1b1344bd37ca30637d59194da4a764"/>
   </package>
-  <package project="devel:languages:perl" name="perl-Perl6-Export-Attrs" version="0.000006" srcmd5="63bd106d258d212fb29c5681a67f4e37" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Perl6-Export-Attrs" version="0.0.6" srcmd5="fcb95bdb5eaf897ad71d4e9c4d707482" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Perl6-Junction" version="1.60000" srcmd5="e4b1816cceab5fb477f102dde2992cc7" changesmd5="1974b404a09b0acd626b063fc32f195a" maxmtime="2013-10-06 12:55:32 UTC" release="20" verifymd5="83d5e907b180f413564be6c2bfabdfc9">
     <persons>
       <person userid="lrupp" role="maintainer"/>
@@ -6965,7 +6940,7 @@
     <failure repo="SLE_15_SP4" time="1649844493" srcmd5="3eec2e9f306e053c2776dac1023fc735"/>
     <failure repo="SLE_15_SP3" time="1618573603" srcmd5="3eec2e9f306e053c2776dac1023fc735"/>
   </package>
-  <package project="devel:languages:perl" name="perl-Perl6-Slurp" version="0.051005" srcmd5="25eb4a1c66463dc326b3c18af9e30d3c" changesmd5="0dfd1ec78045ce84b35274df5093872b" maxmtime="2015-04-14 05:39:45 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-Perl6-Slurp" version="0.51.5" srcmd5="a058f9a1ebb132f069a8db3a17ad0511" changesmd5="" maxmtime="" release="1" verifymd5="691627e72d7d8c5814490e199f0e212d"/>
   <package project="devel:languages:perl" name="perl-PerlIO-Layers" version="0.012" srcmd5="6b95bf6abeb1fc995046e1e3af0826f3" changesmd5="" maxmtime="" release="5" verifymd5="a0761f0fbe6371dc8c6e6ae5c2894769"/>
   <package project="devel:languages:perl" name="perl-PerlIO-eol" version="0.190.0" srcmd5="5e310ff70180b2c4745b05b6639dc356" changesmd5="" maxmtime="" release="2"/>
   <package project="devel:languages:perl" name="perl-PerlIO-gzip" version="0.20" srcmd5="717d0957b65b7ebb42398640b04d9efa" changesmd5="34334c0a0afe63c6d1191bdc5d1c16b4" maxmtime="2017-06-25 06:38:08 UTC" release="3">
@@ -6982,7 +6957,7 @@
   <package project="devel:languages:perl" name="perl-Perlbal" version="1.80" srcmd5="bff01dd140b7edd6e4f2e2f2a4dc7993" changesmd5="3efeb516b70c71dbca46368da9642fda" maxmtime="2015-04-15 07:27:42 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-Pinto" version="0.14" srcmd5="706feb46b04604b680d4ead6ca27f6f1" changesmd5="185693dd9f9751ac4e2ccda1ff60457b" maxmtime="2017-08-14 13:13:56 UTC" release="1"/>
   <package project="devel:languages:perl" name="perl-PkgConfig" version="0.25026" srcmd5="6ba5cc84af9b7f3664d5d016632a2e7a" changesmd5="" maxmtime="" release="3"/>
-  <package project="devel:languages:perl" name="perl-PlRPC" version="0.2020" srcmd5="06aab9bafdd71bfd186318f555406760" changesmd5="08ce9eccbe8ce0aff85a985c5eaf8372" maxmtime="2017-05-05 05:21:01 UTC" release="10" verifymd5="52840aa2138b190bb92d464f025f2838">
+  <package project="devel:languages:perl" name="perl-PlRPC" version="0.202.0" srcmd5="b6b0b2f8ffe597a1cf224d35be7cd7e9" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="anicka" role="maintainer"/>
       <person userid="dlovasko" role="maintainer"/>
@@ -7008,7 +6983,7 @@
       <person userid="smithfarm" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Plack-Middleware-LogWarn" version="0.001002" srcmd5="8c816b2aac0220c693f27f7b800b6672" changesmd5="9e1645e9f1cffafb2887088b75c60245" maxmtime="2015-01-14 15:42:15 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Plack-Middleware-LogWarn" version="0.1.2" srcmd5="2f66785b7624ad8821dbdac133cd4b72" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="smithfarm" role="maintainer"/>
     </persons>
@@ -7070,7 +7045,7 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Pod-Elemental-Transformer-List" version="0.102001" srcmd5="16c86211ee67c4575ab285992188adf8" changesmd5="" maxmtime="" release="1">
+  <package project="devel:languages:perl" name="perl-Pod-Elemental-Transformer-List" version="0.102.1" srcmd5="497b2a223dffb36d43bcb106cb7654e9" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
@@ -7136,7 +7111,7 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-Pod-Weaver-Plugin-Encoding" version="0.03" srcmd5="34efcf7da5aaa31a792c7872d59c4c57" changesmd5="24a6dc041d5af3c27f04358df3b7c008" maxmtime="2015-07-06 04:33:59 UTC" release="1"/>
-  <package project="devel:languages:perl" name="perl-Pod-Weaver-PluginBundle-MARCEL" version="1.102460" srcmd5="e68929729d52a293ee5ed1e040f2667b" changesmd5="f6389801dba2d4089028b97add7f97ad" maxmtime="2011-11-17 15:46:58 UTC" release="4" verifymd5="c1e05dc9bb776100c65a4c18562d65e3">
+  <package project="devel:languages:perl" name="perl-Pod-Weaver-PluginBundle-MARCEL" version="1.102.460" srcmd5="9d5c5600d4ce54b9249d4f0760113f7f" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
@@ -7479,7 +7454,7 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-Regexp-Common-net-CIDR" version="0.03" srcmd5="19cea4b37e847d2998728c7398302ca7" changesmd5="" maxmtime="" release="3" verifymd5="b90f59397dc37bf9359ada1b5b5c27bf"/>
-  <package project="devel:languages:perl" name="perl-Regexp-Debugger" version="0.002007" srcmd5="714b2dbfe189bfce79bc29f5d60c70e9" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Regexp-Debugger" version="0.2.7" srcmd5="a5d214953b4a94859907fba4c9bb518a" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Regexp-Grammars" version="1.058" srcmd5="3b111afe6fd2e818467fc8a79d6269fb" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Regexp-IPv6" version="0.03" srcmd5="df06914faa35837ba8b6ffa926ef9437" changesmd5="999fd90f2dbaf5c4654005e80fe70ce0" maxmtime="2013-06-25 07:29:53 UTC" release="8" verifymd5="a442de5fb4da06e97b9ba246ad637119"/>
   <package project="devel:languages:perl" name="perl-Regexp-Parser" version="0.23" srcmd5="bd4af693ea248ebb36eac03378fe2eb6" changesmd5="" maxmtime="" release="1"/>
@@ -7701,7 +7676,9 @@
   <package project="devel:languages:perl" name="perl-Sereal-Decoder" version="5.004" srcmd5="a3c9a8f9d0d8ab4704ecfe48f37ab3be" changesmd5="" maxmtime="" release="28" verifymd5="a89d34e2e9be3c959889eef3ad464a76"/>
   <package project="devel:languages:perl" name="perl-Sereal-Encoder" version="5.004" srcmd5="7eb9e328dfc6e99f183b82ca8ae686bb" changesmd5="" maxmtime="" release="29" verifymd5="e1c7b563d1a46cc83ef099102d641d1c"/>
   <package project="devel:languages:perl" name="perl-Server-Control" version="0.20" srcmd5="99a86b34e40ea980bd909147d255917e" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-Server-Starter" version="0.35" srcmd5="1b4eafae6b8fb8d467e436a585ed8c2b" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Server-Starter" version="0.35" srcmd5="1b4eafae6b8fb8d467e436a585ed8c2b" changesmd5="" maxmtime="" release="1">
+    <failure repo="15.4" time="1710224198" srcmd5="1b4eafae6b8fb8d467e436a585ed8c2b"/>
+  </package>
   <package project="devel:languages:perl" name="perl-Session-Storage-Secure" version="1.000" srcmd5="bb1d280f64ef8bbb168cdcb2f88ac880" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Session-Token" version="1.503" srcmd5="87073430d342565fa64f318f77b36d19" changesmd5="" maxmtime="" release="3">
     <persons>
@@ -7877,7 +7854,7 @@
   </package>
   <package project="devel:languages:perl" name="perl-String-CamelCase" version="0.04" srcmd5="bed0cffc5f2de8c2e153ce015281553a" changesmd5="" maxmtime="" release="8" verifymd5="57fc5125b066c2d27c06d8e193b7f059"/>
   <package project="devel:languages:perl" name="perl-String-Compare-ConstantTime" version="0.321" srcmd5="cf72bd203b172244f8128fdee62554a8" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-String-Copyright" version="0.003014" srcmd5="35d13124d60121343a71d07bebb04d00" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-String-Copyright" version="0.3.14" srcmd5="44234701eff74ec5b83357996312b5dd" changesmd5="" maxmtime="" release="1" verifymd5="310b1006a7d9b4139ea89465878360ec"/>
   <package project="devel:languages:perl" name="perl-String-Diff" version="0.07" srcmd5="21cb56cc46e7e568edd9406b72842541" changesmd5="" maxmtime="" release="14">
     <failure repo="pure_factory" time="1538917708" srcmd5="0ab9758cb43f986a20a26812c26bb2af"/>
   </package>
@@ -8021,7 +7998,7 @@
       <person userid="pmonrealgonzalez" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Sys-Info-Base" version="0.7807" srcmd5="1948ce21fcb969e8a562346f10d847a1" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Sys-Info-Base" version="0.780.700" srcmd5="a78a04a086ad5e8f73310542187eba32" changesmd5="" maxmtime="" release="1" verifymd5="95bfac1b9a0ed41e42c5a1e35d102224"/>
   <package project="devel:languages:perl" name="perl-Sys-LoadAvg" version="0.03" srcmd5="90685fb398fe383d09864b947ed73797" changesmd5="" maxmtime="" release="10" verifymd5="26b448c056bd1846a95d2fd633cc382e">
     <persons>
       <person userid="posophe" role="maintainer"/>
@@ -8216,7 +8193,7 @@
       <person userid="rjschwei" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Tatsumaki" version="0.1013" srcmd5="7be59b1121fc96e14222c6175d5b9b89" changesmd5="" maxmtime="" release="2"/>
+  <package project="devel:languages:perl" name="perl-Tatsumaki" version="0.101.300" srcmd5="b4515f3dabb614494c76072399b3eefd" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Tee" version="0.14" srcmd5="77de841cc626f6138473ff28b09b7158" changesmd5="058f656de1a7b4828c806a01429d0035" maxmtime="2011-11-17 15:50:24 UTC" release="5" verifymd5="01b2873062e2a6f4fda7a1913ff3ce47">
     <failure repo="SLE_15_SP4" time="1649855235" srcmd5="01b2873062e2a6f4fda7a1913ff3ce47"/>
     <failure repo="SLE_15_SP3" time="1618573875" srcmd5="01b2873062e2a6f4fda7a1913ff3ce47"/>
@@ -8297,7 +8274,7 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-Term-Detect-Software" version="0.227.0" srcmd5="99f588a96976c8b4487eff095c9150c9" changesmd5="" maxmtime="" release="2"/>
-  <package project="devel:languages:perl" name="perl-Term-EditorEdit" version="0.0016" srcmd5="ae4465f5b7c7c2cebfee00bb643925cf" changesmd5="6a48d126602161ec9869c8eba6f590b5" maxmtime="2015-04-20 16:57:51 UTC" release="1" verifymd5="cc0c3192784bac8ecd9bc82c2a233ca1"/>
+  <package project="devel:languages:perl" name="perl-Term-EditorEdit" version="0.1.600" srcmd5="468fdcb9229eccd6aac7f717679a8d9a" changesmd5="" maxmtime="" release="1" verifymd5="c0f1dbf91ce54d1c876c2cce5ad88394"/>
   <package project="devel:languages:perl" name="perl-Term-Encoding" version="0.03" srcmd5="9db6acfd1cfddf318419bf72d673f876" changesmd5="" maxmtime="" release="9" verifymd5="cdfe89f622bf404f33937bb6a05e29ae"/>
   <package project="devel:languages:perl" name="perl-Term-Filter" version="0.03" srcmd5="7727a0047f7dd536acadce7f5096736d" changesmd5="35835153cdb147ed11ade6a7fcbeca52" maxmtime="2012-03-16 00:35:57 UTC" release="1" verifymd5="bfb7f19f5f47b37b54f27cf4d8a5a4f1">
     <failure repo="SLE_15_SP4" time="1649870017" srcmd5="bfb7f19f5f47b37b54f27cf4d8a5a4f1"/>
@@ -8338,7 +8315,7 @@
       <person userid="smithfarm" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Term-ReadLine-Perl" version="1.0303" srcmd5="877933bfe7d3f21ef57793ca97114e8b" changesmd5="507b637e872f9d686b61f6427eb2567f" maxmtime="2012-09-17 14:31:45 UTC" release="1" verifymd5="2e2f840d9214d7d179faf4632013d6b3">
+  <package project="devel:languages:perl" name="perl-Term-ReadLine-Perl" version="1.30.300" srcmd5="0e772184e694011e79ee88531f16e4d4" changesmd5="" maxmtime="" release="1">
     <failure repo="SLE_15_SP4" time="1649844121" srcmd5="2e2f840d9214d7d179faf4632013d6b3"/>
     <failure repo="SLE_15_SP3" time="1618573432" srcmd5="2e2f840d9214d7d179faf4632013d6b3"/>
   </package>
@@ -8726,7 +8703,7 @@
       <person userid="rjschwei" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Test-Subroutines" version="1.113350" srcmd5="ed117f8b6c0a5b120d2e0e65c899c202" changesmd5="b10b8980eab2e8c32de1bdbc85268d64" maxmtime="2014-12-22 14:11:47 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Test-Subroutines" version="1.113.350" srcmd5="9242c8a560aa2392077005ba9fa68b57" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="smithfarm" role="maintainer"/>
     </persons>
@@ -8806,7 +8783,7 @@
       <person userid="pmonrealgonzalez" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Test-Weaken" version="3.022000" srcmd5="e227eae3ef07a24ca19fa286196bd686" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Test-Weaken" version="3.22.0" srcmd5="3f62bfbe4c622ff43f0ddbbe41797943" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Test-Without-Module" version="0.21" srcmd5="715bd76a2a47391916f9edc45ee4cd48" changesmd5="" maxmtime="" release="18" verifymd5="015c7e2c738ff6517f52ef2f23253177"/>
   <package project="devel:languages:perl" name="perl-Test-WriteVariants" version="0.014" srcmd5="f30401e8be81319ccba6abfdbafd650b" changesmd5="" maxmtime="" release="3"/>
   <package project="devel:languages:perl" name="perl-Test-XML" version="0.08" srcmd5="abd2da0e023f88169728b0a83385c851" changesmd5="48153d92891c4143dc15ea5dcb4e8f96" maxmtime="2010-12-03 14:53:22 UTC" release="3">
@@ -8815,12 +8792,10 @@
   </package>
   <package project="devel:languages:perl" name="perl-Test-YAML" version="1.07" srcmd5="7930a9ebe159e4e083a19568708c6034" changesmd5="" maxmtime="" release="9" verifymd5="1a810bb900a0c7132b1643d98b974f91"/>
   <package project="devel:languages:perl" name="perl-Test-YAML-Valid" version="0.04" srcmd5="7f05e37ca2e0be415775b79fec3cdec1" changesmd5="4e2445e2552601616e3d0aa20d10e60c" maxmtime="2017-10-03 21:20:02 UTC" release="18" verifymd5="e9095cb75da6e8c3714b376e5d5ac98b"/>
-  <package project="devel:languages:perl" name="perl-Test-mysqld" version="1.0013" srcmd5="b321bbe97096348f3a112ea22ea4f2ba" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Test-mysqld" version="1.1.300" srcmd5="9b24451413367d1698421bc9e62ad430" changesmd5="" maxmtime="" release="1" verifymd5="b1e42880745a8dbb8d3fdd52b4c9efd4"/>
   <package project="devel:languages:perl" name="perl-Test-utf8" version="1.02" srcmd5="6cb2556d940acc63bc09aa0a23da759c" changesmd5="" maxmtime="" release="6" verifymd5="b80f9a865ede484c772ebba982ff8ef9"/>
   <package project="devel:languages:perl" name="perl-Test2-Formatter-YAMLEnhancedTAP" version="0.0.5" srcmd5="5a8dbd1fbdfc1ed85a94cb6a142eec63" changesmd5="" maxmtime="" release="3"/>
-  <package project="devel:languages:perl" name="perl-Test2-Harness" version="1.000155" srcmd5="077c3b0c44b4b8b807504e35ab2ebc6c" changesmd5="" maxmtime="" release="1">
-    <failure repo="openSUSE_Tumbleweed" time="1710235732" srcmd5="077c3b0c44b4b8b807504e35ab2ebc6c"/>
-  </package>
+  <package project="devel:languages:perl" name="perl-Test2-Harness" version="1.0.155" srcmd5="c7f780835dfc0593e36255bb304be06e" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Test2-Plugin-MemUsage" version="0.002003" srcmd5="ab84a60221aa2c33b6565739b3ec08fb" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="dstoecker" role="maintainer"/>
@@ -8985,8 +8960,8 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Text-MultiMarkdown" version="1.002000" srcmd5="bdf1031177647b68835bb3f35f94d099" changesmd5="" maxmtime="" release="1"/>
-  <package project="devel:languages:perl" name="perl-Text-NeatTemplate" version="0.1600" srcmd5="54595ece845aaeb76edaf5fed5449671" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Text-MultiMarkdown" version="1.2.0" srcmd5="291b2d376aa7415d4ae645cc28421ac2" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Text-NeatTemplate" version="0.160.0" srcmd5="78bcecdec41cd6395ba78848f7a28090" changesmd5="" maxmtime="" release="1" verifymd5="81fa14e380e17c9b0d8e21381279331c"/>
   <package project="devel:languages:perl" name="perl-Text-Ngram" version="0.15" srcmd5="c4f08b5ce09ec31caf5ec375a6130166" changesmd5="b6b9161769ab012e6f200a6255990cda" maxmtime="2015-04-16 20:17:31 UTC" release="1">
     <persons>
       <person userid="coolo" role="maintainer"/>
@@ -9235,7 +9210,7 @@
   <package project="devel:languages:perl" name="perl-Tk-ProgressBar-Mac" version="1.2" srcmd5="e8650cffd3e10ef98ba7d2f1f1904d06" changesmd5="421f35d8de1381e524cb5cf611ffa33b" maxmtime="2015-02-05 14:45:45 UTC" release="2" verifymd5="b4be2b95b2010f5d8ed24f055f7523c9"/>
   <package project="devel:languages:perl" name="perl-Tk-Stderr" version="1.2" srcmd5="4c2bb103abf649cdd8fd9e945302919a" changesmd5="f67fd92c8c1cf251a26365b5db0ba860" maxmtime="2015-02-05 15:11:47 UTC" release="1" verifymd5="f010666980cd591ff561818f9e945af4"/>
   <package project="devel:languages:perl" name="perl-Tk-TableMatrix" version="1.29" srcmd5="111c9214a9d4f32c91ce4fee48c4f514" changesmd5="" maxmtime="" release="12"/>
-  <package project="devel:languages:perl" name="perl-Transmission-Client" version="0.0806" srcmd5="40018623ae643614679af2250d881736" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-Transmission-Client" version="0.80.600" srcmd5="44fa977b55b3d61b3c89b9fec6f6e820" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-Tree-DAG_Node" version="1.32" srcmd5="725b6f23232fa90600490d4e38c636bc" changesmd5="" maxmtime="" release="135" verifymd5="7908f8ee34a260536f15dea71f17cd71">
     <persons>
       <person userid="coolo" role="maintainer"/>
@@ -9412,7 +9387,7 @@
       <person userid="coolo" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-Version-Requirements" version="0.101023" srcmd5="d5c795278be5ec81c00cd0d0b1f62a77" changesmd5="37ec45e9f5cf16c24b6ea5cc6a43aee6" maxmtime="2015-04-13 20:40:18 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-Version-Requirements" version="0.101.23" srcmd5="4704f8210ccd768208cca5984c13182d" changesmd5="" maxmtime="" release="1">
     <persons>
       <person userid="coolo" role="maintainer"/>
       <person userid="coolo" role="bugowner"/>
@@ -9436,7 +9411,7 @@
       <person userid="mcalmer" role="maintainer"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-WWW-Curl-Simple" version="0.100191" srcmd5="180774399aae53f8f3aeeef2674c3d0b" changesmd5="e0f3cbf6ce874a8a328157f67c81a394" maxmtime="2015-04-15 07:04:41 UTC" release="1">
+  <package project="devel:languages:perl" name="perl-WWW-Curl-Simple" version="0.100.191" srcmd5="2b671756f6bd2aba19a157c458b0c0e5" changesmd5="" maxmtime="" release="1" verifymd5="2135b49056044def0f2f9e350dc7fce8">
     <persons>
       <person userid="lrupp" role="maintainer"/>
       <person userid="lrupp" role="bugowner"/>
@@ -9740,7 +9715,7 @@
       <person userid="dlovasko" role="bugowner"/>
     </persons>
   </package>
-  <package project="devel:languages:perl" name="perl-XML-RSS-LibXML" version="0.3105" srcmd5="ee39952f1cdf67e48ad9919995e23185" changesmd5="a654665051924fcf20a901a626d0d1bf" maxmtime="2015-04-13 20:37:10 UTC" release="1"/>
+  <package project="devel:languages:perl" name="perl-XML-RSS-LibXML" version="0.310.500" srcmd5="7ecfa3f7a2efe5cbb71156e427a06f5e" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-XML-RegExp" version="0.04" srcmd5="be840bec659972b10a52f3f0bd9e3394" changesmd5="dc813be0042de88501e822363717fd85" maxmtime="2012-06-01 05:22:45 UTC" release="637" verifymd5="9f3140e7c64b4585f33512858c22b99f">
     <persons>
       <person userid="anicka" role="maintainer"/>
@@ -9961,7 +9936,7 @@
     </persons>
   </package>
   <package project="devel:languages:perl" name="perl-constant-defer" version="6" srcmd5="c71de9512d0cee3fb2c30bcf14656f5e" changesmd5="4cb81bf7d2deaec553f7009005399bc8" maxmtime="2015-04-25 07:53:26 UTC" release="14" verifymd5="a2113c1577f732f4a3f8d50642a377d4"/>
-  <package project="devel:languages:perl" name="perl-constant-lexical" version="2.0003" srcmd5="e507163367d3969d393aecaa8048b59d" changesmd5="" maxmtime="" release="1"/>
+  <package project="devel:languages:perl" name="perl-constant-lexical" version="2.0.300" srcmd5="d8cd7f18012cb7a313d7ba12b54f145e" changesmd5="" maxmtime="" release="1"/>
   <package project="devel:languages:perl" name="perl-criticism" version="1.02" srcmd5="6be5b9801d96b12b3f52060ad03ec9ff" changesmd5="1a598a49458b1c76816535033a0271ed" maxmtime="2011-04-15 07:28:07 UTC" release="3">
     <failure repo="SLE_15_SP4" time="1649870107" srcmd5="6be5b9801d96b12b3f52060ad03ec9ff"/>
     <failure repo="SLE_15_SP3" time="1618574670" srcmd5="6be5b9801d96b12b3f52060ad03ec9ff"/>
