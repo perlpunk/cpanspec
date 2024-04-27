@@ -29,6 +29,7 @@ jobs:
         'perl(Pod::POM)'
         'perl(Text::Autoformat)'
         'perl(YAML::XS)'
+        'perl(XML::Simple)'
         obs-service-format_spec_file
 
     - name: test
