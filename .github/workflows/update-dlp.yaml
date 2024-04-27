@@ -44,7 +44,7 @@ jobs:
         ls -lrt ~/obs-mirror/cpan
 
     - name: configure osc
-      with: # Set the secret as an input
+      env: # Set the secret as an input
         OSC_PASSWORD: ${{ secrets.OSC_PASSWORD }}
       run: |
         cp etc/oscrc ~/.oscrc
