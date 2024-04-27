@@ -1,0 +1,39 @@
+name: Update dlp
+
+on:
+  push:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    container:
+      image: registry.opensuse.org/opensuse/leap:15.5
+    steps:
+    - run: |
+        zypper -n install tar gzip
+    - uses: actions/checkout@v3
+    - name: Install deps
+      run: >
+        zypper -n install perl-App-cpanminus make gcc
+        'perl(Algorithm::Diff)'
+        'perl(Archive::Zip)'
+        'perl(Class::Accessor::Chained)'
+        'perl(File::ShareDir::Install)'
+        'perl(LWP::UserAgent)'
+        'perl(Module::Build)'
+        'perl(Module::Build::Tiny)'
+        'perl(Parse::CPAN::Packages)'
+        'perl(Perl::PrereqScanner)'
+        'perl(Pod::POM)'
+        'perl(Text::Autoformat)'
+        'perl(YAML::XS)'
+        obs-service-format_spec_file
+
+    - name: test
+      run: |
+        bin/fetch-cpan.sh
+        ls -lrt ~/obs-mirror
+
+
