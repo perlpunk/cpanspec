@@ -31,6 +31,9 @@ jobs:
         'perl(YAML::XS)'
         'perl(XML::Simple)'
         obs-service-format_spec_file
+        procmail
+
+      # procmail for /usr/bin/lockfile
 
     - name: test
       run: |
