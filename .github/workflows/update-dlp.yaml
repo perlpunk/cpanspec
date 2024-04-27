@@ -13,7 +13,7 @@ jobs:
     steps:
     - run: |
         zypper -n install tar gzip
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install deps
       run: >
         zypper -n install make gcc
@@ -74,5 +74,5 @@ jobs:
         path: |
           ~/obs-mirror/cpan/
           ~/obs-mirror/status/
-          ~/obs-mirror/status/auto.xml
-          ~/obs-mirror/status/perl.xml
+          ~/obs-mirror/auto.xml
+          ~/obs-mirror/perl.xml
