@@ -37,11 +37,18 @@ jobs:
 
       # procmail for /usr/bin/lockfile
 
-    - name: test
+    - name: fetch cpan releases
       run: |
         bin/fetch-cpan.sh
         ls -lrt ~/obs-mirror
         ls -lrt ~/obs-mirror/cpan
+
+    - name: configure osc
+      with: # Set the secret as an input
+        OSC_PASSWORD: ${{ secrets.OSC_PASSWORD }}
+      run: |
+        cp etc/oscrc ~/.oscrc
+        perl -pi -wE's/PASSWORD/$ENV{OSC_PASSWORD}/' ~/.oscrc
 
     - name: status
       run: |
@@ -55,3 +62,7 @@ jobs:
             --project home:tinita:testautoupdate \
             --max 1
 
+    - uses: actions/upload-artifact@v4
+      with:
+        name: obs-mirror
+        path: ~/obs-mirror/
