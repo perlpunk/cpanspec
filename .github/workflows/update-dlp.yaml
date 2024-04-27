@@ -32,6 +32,7 @@ jobs:
         'perl(XML::Simple)'
         obs-service-format_spec_file
         procmail
+        wget
 
       # procmail for /usr/bin/lockfile
 
