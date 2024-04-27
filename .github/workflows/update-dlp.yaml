@@ -71,4 +71,8 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: obs-mirror
-        path: ~/obs-mirror/
+        path: |
+          ~/obs-mirror/cpan/
+          ~/obs-mirror/status/
+          ~/obs-mirror/status/auto.xml
+          ~/obs-mirror/status/perl.xml
