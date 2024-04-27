@@ -40,5 +40,17 @@ jobs:
       run: |
         bin/fetch-cpan.sh
         ls -lrt ~/obs-mirror
+        ls -lrt ~/obs-mirror/cpan
 
+    - name: status
+      run: |
+        ./bin/status-perl --data ~/obs-mirror --project home:tinita:testautoupdate --update
+
+
+    - name: update
+      run: |
+        ./bin/update-perl \
+            --data ~/obs-mirror \
+            --project home:tinita:testautoupdate \
+            --max 1
 
