@@ -31,6 +31,7 @@ jobs:
         'perl(YAML::XS)'
         'perl(XML::Simple)'
         obs-service-format_spec_file
+        obs-service-download_files
         procmail
         wget
         osc
