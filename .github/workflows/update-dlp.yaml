@@ -9,32 +9,33 @@ jobs:
   update:
     runs-on: ubuntu-latest
     container:
-      image: registry.opensuse.org/opensuse/leap:15.5
+      #image: registry.opensuse.org/opensuse/leap:15.5
+      image: registry.opensuse.org/home/tinita/branches/opensuse/templates/images/tumbleweed/containers/opensuse/example
     steps:
-    - run: |
-        zypper -n install tar gzip
+#    - run: |
+#        zypper -n install tar gzip
     - uses: actions/checkout@v4
-    - name: Install deps
-      run: >
-        zypper -n install make gcc
-        'perl(Algorithm::Diff)'
-        'perl(Archive::Zip)'
-        'perl(Class::Accessor::Chained)'
-        'perl(File::ShareDir::Install)'
-        'perl(LWP::UserAgent)'
-        'perl(Module::Build)'
-        'perl(Module::Build::Tiny)'
-        'perl(Parse::CPAN::Packages)'
-        'perl(Perl::PrereqScanner)'
-        'perl(Pod::POM)'
-        'perl(Text::Autoformat)'
-        'perl(YAML::XS)'
-        'perl(XML::Simple)'
-        obs-service-format_spec_file
-        obs-service-download_files
-        procmail
-        wget
-        osc
+#    - name: Install deps
+#      run: >
+#        zypper -n install make gcc
+#        'perl(Algorithm::Diff)'
+#        'perl(Archive::Zip)'
+#        'perl(Class::Accessor::Chained)'
+#        'perl(File::ShareDir::Install)'
+#        'perl(LWP::UserAgent)'
+#        'perl(Module::Build)'
+#        'perl(Module::Build::Tiny)'
+#        'perl(Parse::CPAN::Packages)'
+#        'perl(Perl::PrereqScanner)'
+#        'perl(Pod::POM)'
+#        'perl(Text::Autoformat)'
+#        'perl(YAML::XS)'
+#        'perl(XML::Simple)'
+#        obs-service-format_spec_file
+#        obs-service-download_files
+#        procmail
+#        wget
+#        osc
 
       # procmail for /usr/bin/lockfile
 
