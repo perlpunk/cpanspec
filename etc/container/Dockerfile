@@ -1,5 +1,5 @@
 #!BuildTag: dlp-autoupdate:latest dlp-autoupdate:%PKG_VERSION%
-FROM opensuse/leap:15.5
+FROM opensuse/tumbleweed
 
 LABEL org.opencontainers.image.title="cpanspec d:l:p autpupdate"
 LABEL org.opencontainers.image.version="%PKG_VERSION%.%RELEASE%"
