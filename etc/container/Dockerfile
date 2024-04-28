@@ -1,9 +1,9 @@
-#!BuildTag: dlp-autoupdate:latest dlp-autoupdate:%PKG_VERSION%
+#!BuildTag: dlp-autoupdate:latest
 FROM opensuse/tumbleweed
 
-LABEL org.opencontainers.image.title="cpanspec d:l:p autpupdate"
-LABEL org.opencontainers.image.version="%PKG_VERSION%.%RELEASE%"
-LABEL org.openbuildservice.disturl="%DISTURL%"
+LABEL org.opencontainers.image.title="cpanspec d:l:p autoupdate"
+#LABEL org.opencontainers.image.version="%PKG_VERSION%.%RELEASE%"
+#LABEL org.openbuildservice.disturl="%DISTURL%"
 LABEL org.opencontainers.image.created="%BUILDTIME%"
 
 
