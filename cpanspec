@@ -202,6 +202,7 @@ BEGIN {
 }
 
 use Module::CoreList;
+use Module::Metadata;
 use FileHandle;
 use Archive::Tar;
 use Archive::Tar::Constant qw/ &DIR /;
@@ -1912,6 +1913,24 @@ sub prereqs_from_metajson {
 sub parse_provides {
     my ($path, $files, $no_index) = @_;
     my %provides;
+    my $provides_mm = Module::Metadata->provides(
+        dir => $path, version => 2, prefix => ''
+    );
+    TEST: for my $package (sort keys %$provides_mm) {
+        my $file = $provides_mm->{ $package }->{file};
+        if (keys %$no_index) {
+            # If a module provides a list of things to not index, we can
+            # index everything else.
+            # https://metacpan.org/pod/CPAN::Meta::Spec#no_index
+            if (my $dirs = $no_index->{directory}) {
+                for my $dir (@$dirs) {
+                    next TEST if $file =~ m/^\Q$dir/;
+                }
+            }
+        }
+        $provides{ $package } = $provides_mm->{ $package };
+    }
+    return %provides;
     TEST: foreach my $test (grep /\.(pm|t|PL|pl)/, @$files) {
         next unless $test =~ m{\.pm$};
         if (keys %$no_index) {
