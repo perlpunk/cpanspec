@@ -1414,6 +1414,9 @@ END
     if ($config_file) {
         print $spec "Source$counter:     $config_file\n";
     }
+    if ($dlp) {
+        print $spec "Source100:      README.md\n";
+    }
 
     my $patches = process_patches($config);
 
