@@ -35,3 +35,5 @@
 #follows directly after %files section, so it can contain new blocks or also
 #changes to %files section
 #epoch: number
+# Where module files should be searched for. Default: lib/
+#index_dir:

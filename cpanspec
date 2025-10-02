@@ -1307,7 +1307,7 @@ for my $ofile (@args) {
     dump_statistics($module, $version, \%stats);
     unless (%provides) {
         verbose("No 'provides' info in meta, parsing code.\n");
-        %provides = parse_provides($basedir . $path, \@files, \%no_index);
+        %provides = parse_provides($config, $basedir . $path, \@files, \%no_index);
     }
 
     delete @build_requires{ keys %provides };
@@ -1914,13 +1914,20 @@ sub prereqs_from_metajson {
 }
 
 sub parse_provides {
-    my ($path, $files, $no_index) = @_;
+    my ($config, $path, $files, $no_index) = @_;
     my %provides;
     my $provides_mm = Module::Metadata->provides(
         dir => $path, version => 2, prefix => ''
     );
     TEST: for my $package (sort keys %$provides_mm) {
         my $file = $provides_mm->{ $package }->{file};
+        # Module files are placed under lib/ and less commonly in the root dir.
+        # There might be a few exceptions where a module is placed
+        # under Module/Name.pm instead lib/Module/Name.pm
+        # But in that cases we can override this in cpanspec:
+        if (my $index_dir = $config->{index_dir}) {
+            next unless $file =~ m{^\Q$index_dir};
+        }
         if (keys %$no_index) {
             # If a module provides a list of things to not index, we can
             # index everything else.
@@ -1930,6 +1937,10 @@ sub parse_provides {
                     next TEST if $file =~ m/^\Q$dir/;
                 }
             }
+        }
+        else {
+            # Otherwise just look for .pm files in the root dir or under lib
+            next unless $file =~ m{^(([^/]+\.pm)|(lib/.*\.pm$))};
         }
         $provides{ $package } = $provides_mm->{ $package };
     }
