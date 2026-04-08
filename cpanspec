@@ -2184,6 +2184,7 @@ sub find_doc {
             and $_ ne "cpanfile"
             and $_ ne "pm_to_blib"
             and $_ ne "install.sh"
+            and !/^(?:AGENTS|CLAUDE|GEMINI)\.md/i
             and !/^INSTALL/i
             and !/^META\..+$/i
             and !/^MYMETA\..+$/i
