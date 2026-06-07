@@ -1921,6 +1921,9 @@ sub parse_provides {
     );
     TEST: for my $package (sort keys %$provides_mm) {
         my $file = $provides_mm->{ $package }->{file};
+        # Do the same as PAUSE
+        # https://github.com/andk/pause/blob/9c4a7b050129ec2a9aa6bded21ded29a9b068f1d/lib/PAUSE/dist.pm#L782-L789
+        next if $file =~ m{^(?:x?t|inc|local|perl5|fatlib|examples?|ex|eg|demo)/};
         # Module files are placed under lib/ and less commonly in the root dir.
         # There might be a few exceptions where a module is placed
         # under Module/Name.pm instead lib/Module/Name.pm
