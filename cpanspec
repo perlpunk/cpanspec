@@ -1278,6 +1278,9 @@ for my $ofile (@args) {
                     }
                     $build_requires{$dep} = $newrequires{$dep};
                 }
+                if (my $prov = $dynamic_results->{provides}) {
+                    @provides{ keys %$prov } = values %$prov;
+                }
             }
         }
     }
