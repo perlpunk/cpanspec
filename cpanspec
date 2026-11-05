@@ -1784,7 +1784,7 @@ END
             if ($old_file && $changes) {
                 my $old_changes = extract_old_changes($old_file, $changesfile);
                 $old_changes = decode_latin_or_utf8($old_changes);
-                $old_changes =~ s/\r\n/\n/g;
+                s/\r\n/\n/g for ($old_changes, $changes);
                 $diff_changes = diff_changes($old_changes, $changes) if $old_changes;
                 unless ($diff_changes) {
                     my $info = "Could not generate diff from '$changesfile', using `diff`";
