@@ -1286,7 +1286,10 @@ for my $ofile (@args) {
     }
 
     $license //= get_license_from_content($content);
-    $license = "CHECK($perllicense)" unless $license;
+    unless ($license) {
+        $license = "CHECK($perllicense)";
+        say "CHECK: Could not detect license";
+    }
     $stats{license}->{spec} = $license;
 
     $summary =~ s/[CL]<([^>]+)>/$1/g if defined $summary;
