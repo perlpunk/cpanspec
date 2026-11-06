@@ -214,6 +214,7 @@ use YAML::XS ();
 use CPAN::Meta::YAML;
 use Getopt::Long;
 use Pod::POM;
+use Pod::Text;
 use PodViewSpec;
 use Pod::Usage;
 use File::Basename;
@@ -1788,6 +1789,18 @@ END
                 my $old_changes = extract_old_changes($old_file, $changesfile);
                 $old_changes = decode_latin_or_utf8($old_changes);
                 s/\r\n/\n/g for ($old_changes, $changes);
+                if ($changesfile =~ m/\.pod$/) {
+                    for my $c ($old_changes, $changes) {
+                        my $parser = Pod::Text->new;
+                        $parser->output_string(\my $out);
+                        $parser->parse_string_document($c);
+                        # 2 indentation spaces and a dash
+                        $out =~ s/^( +)\* +/  - /gm;
+                        # Delete empty lines
+                        $out =~ s/^\n//gm;
+                        $c = $out;
+                    }
+                }
                 $diff_changes = diff_changes($old_changes, $changes) if $old_changes;
                 unless ($diff_changes) {
                     my $info = "Could not generate diff from '$changesfile', using `diff`";
