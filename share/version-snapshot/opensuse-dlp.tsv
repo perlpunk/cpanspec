@@ -286,10 +286,6 @@ Devel-Declare	0.006022	Devel::Declare::Context::Simple	0.006022
 Devel-Declare	0.006022	Devel::Declare::MethodInstaller::Simple	0.006022
 Devel-GlobalPhase	0.003003	Devel::GlobalPhase	0.003003
 Devel-Hide	0.0015	Devel::Hide	0.0015
-Error	0.17029	Error	0.17029
-Error	0.17029	Error::Simple	0.17029
-Error	0.17029	Error::subs	0.17029
-Error	0.17029	Error::WarnDie	0.17029
 Exception-Base	0.2501	Exception::Base	0.2501
 Exporter-Tiny	1.006002	Exporter::Shiny	1.006002
 Exporter-Tiny	1.006002	Exporter::Tiny	1.006002
