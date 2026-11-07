@@ -1084,7 +1084,9 @@ for my $ofile (@args) {
     my $changes;
     # Sort files, so that Changes comes before Changes.foo
     @archive_files = sort @archive_files;
-    my $changesfile;
+    # For example some modules have a 'ChangeLog' file with older entries and a newer
+    # 'Changes' with the recent entries. In that case we can configure it
+    my $changesfile = $config->{changesfile};
     foreach my $entry (@archive_files) {
 
         my $version0=$version;
@@ -1107,9 +1109,8 @@ for my $ofile (@args) {
         push(@files, $entry);
 
         my $candidate = lc $entry;
-        if (!$changes && ($candidate =~ m/^changes/ || $candidate =~ m/^changelog/ || $candidate =~ m/^history/)) {
+        if (!$changesfile && ($candidate =~ m/^changes/ || $candidate =~ m/^changelog/ || $candidate =~ m/^history/)) {
             $changesfile = $entry;
-            $changes     = readfile("$path/$entry", 'guess');
         }
 
         if (-x "$basedir$path/$entry" && -f "$basedir$path/$entry") {
@@ -1121,6 +1122,7 @@ for my $ofile (@args) {
         }
 
     }
+    $changes = readfile("$path/$changesfile", 'guess');
     if ($bogus) {
         warn "Skipping $file with $bogus path elements!\n";
         next;
