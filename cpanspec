@@ -952,6 +952,7 @@ sub is_license_file {
     my $file = shift;
 
     $file = lc $file;
+    return 1 if $file =~ /^copyright/;
     return 1 if $file =~ /^copying/;
     return 1 if $file =~ /^licen[sc]e/;
     return 1 if $file =~ /^artistic/;
